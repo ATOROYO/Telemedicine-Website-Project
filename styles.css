@@ -287,3 +287,34 @@ footer ul li a {
     transform: scale(1);
   }
 }
+
+/* Styles for devices with a max width of 600px (e.g., mobile phones) */
+@media (max-width: 600px) {
+  .container {
+    width: 95%;
+  }
+
+  nav ul {
+    text-align: left;
+  }
+
+  .service-item {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .service-list {
+    flex-direction: column;
+  }
+}
+
+/* Styles for devices with a max width of 1024px (e.g., tablets) */
+@media (max-width: 1024px) {
+  .service-item {
+    width: 45%;
+  }
+
+  .service-list {
+    flex-direction: row;
+  }
+}
