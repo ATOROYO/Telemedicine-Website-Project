@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   color: #333;
+  overflow-x: hidden;
 }
 
 .container {
@@ -11,10 +12,12 @@ body {
   margin: 0 auto;
 }
 
+/* Header */
 header {
   background: #0044cc;
   color: #fff;
   padding: 1rem 0;
+  animation: fadeIn 2s;
 }
 
 header h1 {
@@ -38,10 +41,13 @@ nav ul li a {
   text-decoration: none;
 }
 
+/* Hero Section */
 #hero {
   background: #e0f7fa;
   padding: 2rem 0;
   text-align: center;
+  opacity: 0;
+  animation: fadeIn 2s 0.5s forwards;
 }
 
 #hero h2 {
@@ -60,15 +66,19 @@ nav ul li a {
   padding: 0.75rem 1.5rem;
   text-decoration: none;
   border-radius: 5px;
+  transition: background 0.3s ease;
 }
 
 .btn-primary:hover {
   background: #004d40;
 }
 
+/* Services Section */
 #services {
   padding: 2rem 0;
   text-align: center;
+  opacity: 0;
+  animation: fadeIn 2s 1s forwards;
 }
 
 #services h2 {
@@ -87,6 +97,12 @@ nav ul li a {
   border-radius: 5px;
   width: 30%;
   margin-bottom: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .service-item h3 {
@@ -99,16 +115,20 @@ nav ul li a {
   padding: 0.5rem 1rem;
   text-decoration: none;
   border-radius: 5px;
+  transition: background 0.3s ease;
 }
 
 .btn-secondary:hover {
   background: #00796b;
 }
 
+/* Testimonials Section */
 #testimonials {
   background: #f9f9f9;
   padding: 2rem 0;
   text-align: center;
+  opacity: 0;
+  animation: fadeIn 2s 1.5s forwards;
 }
 
 #testimonials h2 {
@@ -130,11 +150,13 @@ nav ul li a {
   font-weight: bold;
 }
 
+/* Footer */
 footer {
   background: #0044cc;
   color: #fff;
   padding: 1rem 0;
   text-align: center;
+  animation: fadeIn 2s 2s forwards;
 }
 
 footer ul {
@@ -150,4 +172,14 @@ footer ul li {
 footer ul li a {
   color: #fff;
   text-decoration: none;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
