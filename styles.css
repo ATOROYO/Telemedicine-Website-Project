@@ -326,7 +326,7 @@ footer ul li a {
 }
 
 .mobile-nav {
-  display: none;
+  display: inline;
 }
 
 @media (max-width: 600px) {
@@ -354,4 +354,11 @@ footer ul li a {
     background: #0044cc;
     color: #fff;
   }
+}
+
+/*Shadow and glow effects*/
+.interactive-element:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.1);
 }
