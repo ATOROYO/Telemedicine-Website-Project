@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Telemedicine Service | Home</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Basic styles and existing animations... */
+
+      /* New styles for login portals and sign-up */
+      #login-signup {
+        padding: 2rem 0;
+        background-color: #f4f4f4;
+        text-align: center;
+      }
+
+      .login-container {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 2rem;
+      }
+
+      .login-box {
+        background: #fff;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 250px;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .login-box:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+
+      .login-box h3 {
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        color: #00796b;
+      }
+
+      .login-box a {
+        display: block;
+        margin: 1rem 0;
+        padding: 0.5rem;
+        background-color: #00796b;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+      }
+
+      .login-box a:hover {
+        background-color: #004d40;
+      }
+
+      #signup {
+        margin-top: 2rem;
+        font-size: 1rem;
+      }
+
+      #signup a {
+        color: #00796b;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s;
+      }
+
+      #signup a:hover {
+        color: #004d40;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Telemedicine Service</h1>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <nav class="mobile-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="consultation.html">Consultation</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="hero">
+      <!-- Hero content as before... -->
+    </section>
+
+    <section id="login-signup">
+      <h2>Access Your Portal</h2>
+      <div class="login-container">
+        <div class="login-box">
+          <h3>Patient Portal</h3>
+          <a href="patient-login.html">Login</a>
+        </div>
+        <div class="login-box">
+          <h3>Doctor Portal</h3>
+          <a href="doctor-login.html">Login</a>
+        </div>
+      </div>
+      <div id="signup">
+        <p>New to our service? <a href="signup.html">Sign Up Here</a></p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="consultation.html">Consultation</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        const nav = document.querySelector(".mobile-nav");
+        nav.style.display = nav.style.display === "block" ? "none" : "block";
+      }
+    </script>
+  </body>
+</html>
