@@ -12,25 +12,55 @@ body {
   margin: 0 auto;
 }
 
+/* Header Styles */
+header {
+  background-color: #0044cc;
+  padding: 1rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /* Logo Container */
 .logo-container {
   display: flex;
   align-items: center;
 }
 
-/* Logo Styles */
 .logo {
   width: 50px; /* Adjust width as needed */
   height: auto;
   margin-right: 10px;
 }
 
-/* Header */
-header {
-  background: #0044cc;
-  color: #fff;
-  padding: 1rem 0;
-  animation: slideInFromTop 1s ease-out;
+/* Top Right Links */
+.top-right-links {
+  display: flex;
+  justify-content: flex-end; /* Align links to the right */
+}
+
+.top-right-links ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.top-right-links ul li {
+  display: inline;
+}
+
+.top-right-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem; /* Adjust size as needed */
+}
+
+.top-right-links ul li a i {
+  margin-right: 5px;
+  vertical-align: middle;
 }
 
 header h1 {
@@ -41,7 +71,7 @@ header h1 {
 nav ul {
   list-style: none;
   padding: 0;
-  text-align: center;
+  text-align: left;
 }
 
 nav ul li {
