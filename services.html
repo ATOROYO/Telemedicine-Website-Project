@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Services | Telemedicine Service</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Services page styles */
+      #services {
+        padding: 2rem;
+        background-color: #f4f4f4;
+      }
+
+      .services-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+      }
+
+      .service-card {
+        background: #fff;
+        padding: 1.5rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        flex: 1 1 calc(33.333% - 2rem);
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .service-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+
+      .service-card h3 {
+        margin-top: 0;
+        font-size: 1.5rem;
+        color: #00796b;
+      }
+
+      .service-card p {
+        font-size: 1rem;
+        color: #333;
+      }
+
+      .service-card a {
+        display: inline-block;
+        margin-top: 1rem;
+        padding: 0.5rem 1rem;
+        background-color: #00796b;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+      }
+
+      .service-card a:hover {
+        background-color: #004d40;
+      }
+
+      @media (max-width: 768px) {
+        .service-card {
+          flex: 1 1 calc(50% - 2rem);
+        }
+      }
+
+      @media (max-width: 480px) {
+        .service-card {
+          flex: 1 1 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Telemedicine Service</h1>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <nav class="mobile-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="consultation.html">Consultation</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="services">
+      <div class="container">
+        <h2>Our Services</h2>
+        <div class="services-container">
+          <div class="service-card">
+            <h3>Virtual Consultations</h3>
+            <p>
+              Connect with qualified healthcare professionals from the comfort
+              of your home via secure video calls. Get expert advice and
+              treatment plans without the need for in-person visits.
+            </p>
+            <a href="consultation.html">Learn More</a>
+          </div>
+
+          <div class="service-card">
+            <h3>Medical Records Access</h3>
+            <p>
+              Access your complete medical history, including lab results and
+              past consultations, securely through our online portal. Easily
+              manage and track your health information.
+            </p>
+            <a href="patient-login.html">Access Records</a>
+          </div>
+
+          <div class="service-card">
+            <h3>Prescription Management</h3>
+            <p>
+              Manage and renew your prescriptions online. Request refills and
+              track your medication history with ease, ensuring you never miss a
+              dose.
+            </p>
+            <a href="patient-login.html">Manage Prescriptions</a>
+          </div>
+
+          <div class="service-card">
+            <h3>24/7 Support</h3>
+            <p>
+              Get assistance anytime with our 24/7 support service. Whether you
+              have a question about our services or need technical support, our
+              team is here to help.
+            </p>
+            <a href="contact.html">Contact Support</a>
+          </div>
+
+          <div class="service-card">
+            <h3>Health Education</h3>
+            <p>
+              Access a wealth of educational resources, including articles,
+              videos, and tips on maintaining your health and wellness. Stay
+              informed and proactive about your health.
+            </p>
+            <a href="about.html">Learn More</a>
+          </div>
+
+          <div class="service-card">
+            <h3>Teletherapy</h3>
+            <p>
+              Receive counseling and therapy services from licensed
+              professionals through secure video sessions. Manage mental health
+              with the support of qualified therapists.
+            </p>
+            <a href="consultation.html">Schedule a Session</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="consultation.html">Consultation</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        const nav = document.querySelector(".mobile-nav");
+        nav.style.display = nav.style.display === "block" ? "none" : "block";
+      }
+    </script>
+  </body>
+</html>
