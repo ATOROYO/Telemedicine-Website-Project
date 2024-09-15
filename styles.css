@@ -12,6 +12,19 @@ body {
   margin: 0 auto;
 }
 
+/* Logo Container */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Logo Styles */
+.logo {
+  width: 50px; /* Adjust width as needed */
+  height: auto;
+  margin-right: 10px;
+}
+
 /* Header */
 header {
   background: #0044cc;
