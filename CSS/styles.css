@@ -594,6 +594,64 @@ nav ul li a {
   color: #004d40;
 }
 
+/* Basic styles for login pages */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.login-box {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.login-box h2 {
+  margin-bottom: 1.5rem;
+  color: #00796b;
+}
+
+.login-box input[type="email"],
+.login-box input[type="password"] {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.login-box input[type="submit"] {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #00796b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-box input[type="submit"]:hover {
+  background-color: #004d40;
+}
+
+.login-box a {
+  display: block;
+  margin-top: 1rem;
+  color: #00796b;
+  text-decoration: none;
+}
+
+.login-box a:hover {
+  color: #004d40;
+}
+
 /* Footer */
 footer {
   background: #0044cc;
