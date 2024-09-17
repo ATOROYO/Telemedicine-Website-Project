@@ -658,7 +658,8 @@ nav ul li a {
   background-color: #f4f4f4;
 }
 
-.consultation h2 {
+.consultation h2,
+.consultation h3 {
   text-align: center;
   color: #00796b;
 }
