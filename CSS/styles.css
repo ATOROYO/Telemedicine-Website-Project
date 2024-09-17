@@ -652,6 +652,38 @@ nav ul li a {
   color: #004d40;
 }
 
+/* Consultation Form */
+.consultation-form {
+  margin-top: 2rem;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.consultation-form h3 {
+  text-align: center;
+  color: #00796b;
+  margin-bottom: 1.5rem;
+}
+
+.consultation-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.consultation-form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.consultation-form label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
 /* Footer */
 footer {
   background: #0044cc;
