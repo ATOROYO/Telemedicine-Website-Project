@@ -531,6 +531,69 @@ nav ul li a {
   color: #004d40;
 }
 
+/* Sign-up page styles */
+#signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.signup-box {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  text-align: center;
+}
+
+.signup-box h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  color: #00796b;
+}
+
+.signup-box input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.signup-box button {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #00796b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.signup-box button:hover {
+  background-color: #004d40;
+}
+
+.signup-box p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.signup-box p a {
+  color: #00796b;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.signup-box p a:hover {
+  color: #004d40;
+}
+
 /* Footer */
 footer {
   background: #0044cc;
