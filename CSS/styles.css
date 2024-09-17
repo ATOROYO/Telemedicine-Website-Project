@@ -350,7 +350,7 @@ nav ul li a {
 .services-container {
   max-width: 1200px;
   margin: 0 auto;
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
   gap: 2rem;
 }
@@ -403,7 +403,7 @@ nav ul li a {
 
 @media (max-width: 480px) {
   .service-card {
-    flex: 1 1 100%;
+    flex: 1 100%;
   }
 }
 
@@ -785,6 +785,10 @@ footer ul li a {
   .service-list {
     flex-direction: row;
   }
+
+  .service-card {
+    flex: 1 1 calc(50% - 2rem);
+  }
 }
 
 .menu-toggle {
@@ -803,24 +807,22 @@ footer ul li a {
   }
 
   .mobile-nav {
-    display: block;
-  }
-
-  .mobile-nav ul {
-    list-style: none;
-    padding: 0;
-  }
-
-  .mobile-nav ul li {
-    margin: 0;
-  }
-
-  .mobile-nav ul li a {
-    display: block;
+    display: none; /* Hide menu initially on mobile */
+    flex-direction: column;
+    background-color: #00796b;
     padding: 1rem;
-    text-decoration: none;
-    background: #0044cc;
-    color: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+
+  .top-right-links {
+    display: none; /* Hide top right links on smaller screens */
+  }
+
+  .service-card {
+    flex: 1 1 calc(50% - 2rem);
   }
 }
 
