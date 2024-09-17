@@ -827,6 +827,20 @@ Copy code
   background-color: #005f57;
 }
 
+/* Doctors Section */
+.doctors {
+  margin-top: 2rem;
+}
+
+.doctor-list {
+  display: none;
+}
+
+.doctor-list h3 {
+  text-align: center;
+  color: #00796b;
+  margin-bottom: 1.5rem;
+}
 
 /* Consultation Form */
 .consultation-form {
