@@ -805,6 +805,29 @@ Copy code
     margin-bottom: 2rem;
 }
 
+/* Specialties */
+.specialties ul {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+}
+
+.specialties ul li {
+  background-color: #00796b;
+  color: white;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.specialties ul li:hover {
+  background-color: #005f57;
+}
+
+
 /* Consultation Form */
 .consultation-form {
   margin-top: 2rem;
