@@ -1001,6 +1001,10 @@ footer ul li a {
     font-size: 1rem;
     padding: 0.5rem;
   }
+
+  .specialties ul {
+    flex-direction: column;
+  }
 }
 
 /* TO BE DELETED */
