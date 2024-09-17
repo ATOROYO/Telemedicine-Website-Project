@@ -684,6 +684,44 @@ nav ul li a {
   color: #333;
 }
 
+.consultation-form input[type="text"],
+.consultation-form input[type="email"],
+.consultation-form input[type="tel"],
+.consultation-form input[type="date"],
+.consultation-form input[type="time"],
+.consultation-form select {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.consultation-form input[type="text"]:focus,
+.consultation-form input[type="email"]:focus,
+.consultation-form input[type="tel"]:focus,
+.consultation-form input[type="date"]:focus,
+.consultation-form input[type="time"]:focus,
+.consultation-form select:focus {
+  outline: none;
+  border-color: #00796b;
+  box-shadow: 0 0 5px rgba(0, 121, 107, 0.5);
+}
+
+.consultation-form button[type="submit"] {
+  background-color: #00796b;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.consultation-form button[type="submit"]:hover {
+  background-color: #005f57;
+}
+
 /* Footer */
 footer {
   background: #0044cc;
