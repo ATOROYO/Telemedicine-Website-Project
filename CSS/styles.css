@@ -894,6 +894,19 @@ footer ul li a {
   .service-card {
     flex: 1 1 calc(50% - 2rem);
   }
+
+  .consultation-form {
+    padding: 1rem;
+  }
+
+  .consultation-form form {
+    gap: 0.75rem;
+  }
+
+  .consultation-form button[type="submit"] {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
 }
 
 /* TO BE DELETED */
