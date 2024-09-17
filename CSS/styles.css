@@ -227,6 +227,72 @@ nav ul li a {
   font-weight: bold;
 }
 
+/* New styles for login portals and sign-up */
+#login-signup {
+  padding: 2rem 0;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.login-box {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.login-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.login-box h3 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #00796b;
+}
+
+.login-box a {
+  display: block;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  background-color: #00796b;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.login-box a:hover {
+  background-color: #004d40;
+}
+
+#signup {
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+
+#signup a {
+  color: #00796b;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+#signup a:hover {
+  color: #004d40;
+}
+
 /* Footer */
 footer {
   background: #0044cc;
