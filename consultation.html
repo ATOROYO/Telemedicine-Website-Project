@@ -178,6 +178,61 @@
             </div>
           </div>
         </div>
+
+        <!-- Consultation Form -->
+        <div class="consultation-form">
+          <h3>Book a Consultation</h3>
+          <form action="submit-consultation.php" method="post">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number:</label>
+              <input type="tel" id="phone" name="phone" required />
+            </div>
+            <div class="form-group">
+              <label for="specialty">Specialty:</label>
+              <select id="specialty" name="specialty" required>
+                <option value="">Select Specialty</option>
+                <option value="cardiology">Cardiology</option>
+                <option value="dermatology">Dermatology</option>
+                <option value="pediatrics">Pediatrics</option>
+                <!-- Add more specialties as needed -->
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="doctor">Preferred Doctor:</label>
+              <select id="doctor" name="doctor" required>
+                <option value="">Select Doctor</option>
+                <!-- This list will be populated dynamically -->
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="appointment-date">Preferred Date:</label>
+              <input
+                type="date"
+                id="appointment-date"
+                name="appointment_date"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="appointment-time">Preferred Time:</label>
+              <input
+                type="time"
+                id="appointment-time"
+                name="appointment_time"
+                required
+              />
+            </div>
+            <button type="submit">Book Appointment</button>
+          </form>
+        </div>
       </div>
     </section>
   </body>
