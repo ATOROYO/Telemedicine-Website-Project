@@ -865,6 +865,24 @@ Copy code
   color: #333;
 }
 
+.doctor-card p {
+  margin: 0;
+  color: #777;
+}
+
+.video-call-button {
+  background-color: #00796b;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.video-call-button:hover {
+  background-color: #005f57;
+}
+
 /* Consultation Form */
 .consultation-form {
   margin-top: 2rem;
