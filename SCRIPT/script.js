@@ -34,4 +34,10 @@ function validateForm() {
     alert("Please enter a valid 10-digit phone number.");
     isValid = false;
   }
+
+  // Specialty validation
+  if (specialty === "") {
+    alert("Please select a specialty.");
+    isValid = false;
+  }
 }
