@@ -53,4 +53,10 @@ function validateForm() {
     alert("Please select a valid appointment date.");
     isValid = false;
   }
+
+  // Time validation
+  if (time === "") {
+    alert("Please select a valid time for the appointment.");
+    isValid = false;
+  }
 }
