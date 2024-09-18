@@ -28,4 +28,10 @@ function validateForm() {
     alert("Please enter a valid email address.");
     isValid = false;
   }
+
+  // Phone validation (already done in HTML pattern attribute)
+  if (!/^\d{10}$/.test(phone)) {
+    alert("Please enter a valid 10-digit phone number.");
+    isValid = false;
+  }
 }
