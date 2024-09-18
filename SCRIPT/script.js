@@ -15,4 +15,10 @@ function validateForm() {
   const doctor = document.getElementById("doctor").value;
   const date = document.getElementById("appointment-date").value;
   const time = document.getElementById("appointment-time").value;
+
+  // Name validation
+  if (name.trim() === "") {
+    alert("Name is required.");
+    isValid = false;
+  }
 }
