@@ -59,4 +59,13 @@ function validateForm() {
     alert("Please select a valid time for the appointment.");
     isValid = false;
   }
+
+  return isValid;
 }
+
+// JavaScript Form Validation error for Consultation.html
+function setInvalid(id) {
+  document.getElementById(id).classList.add("invalid");
+}
+
+function clearErrors() {}
