@@ -21,4 +21,11 @@ function validateForm() {
     alert("Name is required.");
     isValid = false;
   }
+
+  // Email validation
+  const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+  if (!emailPattern.test(email)) {
+    alert("Please enter a valid email address.");
+    isValid = false;
+  }
 }
