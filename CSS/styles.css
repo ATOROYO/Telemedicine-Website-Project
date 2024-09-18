@@ -818,6 +818,38 @@ nav ul li a {
   background-color: #005f57;
 }
 
+/* FAQ Page Styles */
+.faq-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.faq-question {
+  font-size: 1.2em;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-answer {
+  display: none; /* Hide answers by default */
+  padding-top: 10px;
+}
+
+.toggle-icon {
+  font-size: 1.5em;
+  margin-left: 10px;
+  color: #333;
+}
+
 /* Footer */
 footer {
   background: #0044cc;
