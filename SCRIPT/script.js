@@ -4,6 +4,47 @@ function toggleMenu() {
   nav.style.display = nav.style.display === "block" ? "none" : "block";
 }
 
+// JavaScript for Toggling Doctor Lists
+
+function showDoctors(specialty) {
+  // Hide all doctor lists
+  document
+    .querySelectorAll(".doctor-list")
+    .forEach((list) => (list.style.display = "none"));
+
+  // Show the selected specialty's doctor list
+  document.getElementById(specialty).style.display = "block";
+}
+
+// JavaScript for Dynamic Doctor Selection in Form
+const specialtyDropdown = document.getElementById("specialty");
+const doctorDropdown = document.getElementById("doctor");
+
+// Example doctors list
+const doctors = {
+  cardiology: ["Dr. John Doe", "Dr. Jane Smith"],
+  dermatology: ["Dr. Sarah Johnson", "Dr. Mark Lee"],
+  pediatrics: ["Dr. Emily Brown", "Dr. Alex White"],
+};
+
+specialtyDropdown.addEventListener("change", () => {
+  // Clear current doctor options
+  doctorDropdown.innerHTML = '<option value="">Select Doctor</option>';
+
+  // Get the selected specialty
+  const selectedSpecialty = specialtyDropdown.value;
+
+  // Populate doctor options based on selected specialty
+  if (doctors[selectedSpecialty]) {
+    doctors[selectedSpecialty].forEach((doctor) => {
+      const option = document.createElement("option");
+      option.value = doctor;
+      option.textContent = doctor;
+      doctorDropdown.appendChild(option);
+    });
+  }
+});
+
 // Function for Form Validation for Consultation.html
 function validateForm() {
   // Assigning variable to ids
