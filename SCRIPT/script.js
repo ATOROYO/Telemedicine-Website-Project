@@ -40,4 +40,10 @@ function validateForm() {
     alert("Please select a specialty.");
     isValid = false;
   }
+
+  // Doctor validation
+  if (doctor === "") {
+    alert("Please select a doctor.");
+    isValid = false;
+  }
 }
