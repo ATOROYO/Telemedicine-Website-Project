@@ -74,4 +74,10 @@ function clearErrors() {
   errorMessages.forEach((element) => {
     element.textContent = "";
   });
+
+  // Remove invalid class from inputs
+  const inputs = document.querySelectorAll(".form-group input");
+  inputs.forEach((input) => {
+    input.classList.remove("invalid");
+  });
 }
