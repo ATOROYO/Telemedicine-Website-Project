@@ -68,4 +68,10 @@ function setInvalid(id) {
   document.getElementById(id).classList.add("invalid");
 }
 
-function clearErrors() {}
+function clearErrors() {
+  // Clear error messages
+  const errorMessages = document.querySelectorAll(".error-message");
+  errorMessages.forEach((element) => {
+    element.textContent = "";
+  });
+}
