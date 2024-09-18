@@ -134,4 +134,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         question.addEventListener('click', () => {
             const isVisible = answer.style.display === 'block';
+
+            // Toggle the visibility of the answer
+            answer.style.display = isVisible ? 'none' : 'block';
 })
