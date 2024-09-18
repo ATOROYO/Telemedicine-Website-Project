@@ -46,4 +46,11 @@ function validateForm() {
     alert("Please select a doctor.");
     isValid = false;
   }
+
+  // Date validation (ensure date is not in the past)
+  const today = new Date().toISOString().split("T")[0];
+  if (date < today) {
+    alert("Please select a valid appointment date.");
+    isValid = false;
+  }
 }
