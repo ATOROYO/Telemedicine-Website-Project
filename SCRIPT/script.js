@@ -124,21 +124,40 @@ function clearErrors() {
 }
 
 // Function handling toggling of Faq question and answers .
+// document.addEventListener("DOMContentLoaded", function () {
+//   const faqItems = document.querySelectorAll(".faq-item");
+
+//   faqItems.forEach((item) => {
+//     const question = item.querySelector(".faq-question");
+//     const answer = item.querySelector(".faq-answer");
+//     const toggleIcon = item.querySelector(".toggle-icon");
+
+//     question.addEventListener("click", () => {
+//       const isVisible = answer.style.display === "block";
+
+//       // Toggle the visibility of the answer
+//       answer.style.display = isVisible ? "none" : "block";
+
+//       // Change the icon
+//       toggleIcon.textContent = isVisible ? "+" : "-";
+//     });
+//   });
+// });
+
+console.log("FAQ script loaded"); // To ensure the script file is loaded
+
 document.addEventListener("DOMContentLoaded", function () {
-  const faqItems = document.querySelectorAll(".faq-item");
+  console.log("DOM fully loaded and parsed");
+  const faqQuestions = document.querySelectorAll(".faq-question");
 
-  faqItems.forEach((item) => {
-    const question = item.querySelector(".faq-question");
-    const answer = item.querySelector(".faq-answer");
-    const toggleIcon = item.querySelector(".toggle-icon");
-
+  faqQuestions.forEach((question) => {
+    console.log("Setting up toggle for:", question.textContent);
     question.addEventListener("click", () => {
+      console.log("Toggling:", question.textContent);
+      const answer = question.nextElementSibling;
       const isVisible = answer.style.display === "block";
-
-      // Toggle the visibility of the answer
       answer.style.display = isVisible ? "none" : "block";
-
-      // Change the icon
+      const toggleIcon = question.querySelector(".toggle-icon");
       toggleIcon.textContent = isVisible ? "+" : "-";
     });
   });
