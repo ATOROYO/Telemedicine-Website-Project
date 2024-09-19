@@ -162,3 +162,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+// togle menu/nav-bar Script
+$(".menu-btn").click(function () {
+  $("header .menu").toggleClass("active");
+  $(".menu-btn i").toggleClass("active");
+});
