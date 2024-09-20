@@ -1,7 +1,10 @@
 // Script fot the toggle button / Toggle functionality
-function toggleMenu() {
-  const nav = document.querySelector(".mobile-nav");
-  nav.style.display = nav.style.display === "block" ? "none" : "block";
+function toggleMobileMenu() {
+  console.log("Toggle Mobile Menu Clicked");
+  const menuToggle = document.querySelector(".menu-toggle");
+  const mobileNav = document.querySelector(".mobile-nav");
+  menuToggle.classList.toggle("active");
+  mobileNav.classList.toggle("active");
 }
 
 // JavaScript for Toggling Doctor Lists
@@ -122,27 +125,6 @@ function clearErrors() {
     input.classList.remove("invalid");
   });
 }
-
-// Function handling toggling of Faq question and answers .
-// document.addEventListener("DOMContentLoaded", function () {
-//   const faqItems = document.querySelectorAll(".faq-item");
-
-//   faqItems.forEach((item) => {
-//     const question = item.querySelector(".faq-question");
-//     const answer = item.querySelector(".faq-answer");
-//     const toggleIcon = item.querySelector(".toggle-icon");
-
-//     question.addEventListener("click", () => {
-//       const isVisible = answer.style.display === "block";
-
-//       // Toggle the visibility of the answer
-//       answer.style.display = isVisible ? "none" : "block";
-
-//       // Change the icon
-//       toggleIcon.textContent = isVisible ? "+" : "-";
-//     });
-//   });
-// });
 
 console.log("FAQ script loaded"); // To ensure the script file is loaded
 

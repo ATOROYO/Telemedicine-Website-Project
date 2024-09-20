@@ -876,33 +876,61 @@ nav ul li a {
 /* FAQ Page Styles */
 .faq-container {
   max-width: 800px;
-  margin: 20px auto;
+  margin: 100px auto 60px auto; /* Adjusted for fixed header */
   padding: 20px;
-  font-family: Arial, sans-serif;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 1s ease;
+}
+
+.faq-container h1 {
+  text-align: center;
+  color: #00796b;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease;
 }
 
 .faq-item {
   border-bottom: 1px solid #ccc;
   padding: 10px 0;
+  transition: background-color 0.3s;
+}
+
+.faq-item:hover {
+  background-color: #f1f1f1;
 }
 
 .faq-question {
-  font-size: 1.2em;
+  font-size: 1.1rem;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  user-select: none;
+  position: relative;
+}
+
+.faq-question:hover {
+  color: #005f57;
 }
 
 .faq-answer {
-  display: none; /* Hide answers by default */
-  padding-top: 10px;
+  display: none;
+  margin-top: 10px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #555;
+  animation: fadeIn 0.5s ease;
 }
 
 .toggle-icon {
-  font-size: 1.5em;
-  margin-left: 10px;
-  color: #333;
+  font-size: 1.2rem;
+  transition: transform 0.3s;
+}
+
+.faq-item.active .toggle-icon {
+  transform: rotate(45deg);
 }
 
 /* Footer */
