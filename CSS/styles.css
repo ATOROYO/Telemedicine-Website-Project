@@ -1059,43 +1059,32 @@ footer ul li a {
 
 /* Styles for devices with a max width of 1024px (e.g., tablets) */
 @media (max-width: 980px) {
-  .menu-btn {
+  .menu-toggle {
     display: block;
-    z-index: 999;
   }
 
-  .menu-btn i.active:before {
-    content: "\f00d";
-  }
-
-  header .top-right-links,
-  header .mobile-nav {
-    position: fixed;
-    height: 100vh;
+  .mobile-nav {
+    display: none;
+    flex-direction: column;
     width: 100%;
-    left: -100%;
-    top: 0;
-    background: #111;
-    text-align: center;
-    padding-top: 80px;
-    transition: all 0.3s ease;
+    background-color: #333;
   }
 
-  header .top-right-links.active,
-  header .mobile-nav.active {
-    left: 0;
+  .mobile-nav ul {
+    flex-direction: column;
+    padding: 1rem;
   }
 
-  header .top-right-links li,
-  header .mobile-nav li {
-    display: block;
+  .mobile-nav ul li {
+    margin: 10px 0;
   }
 
-  header .top-right-links li a,
-  header .mobile-nav li a {
-    display: inline-block;
-    margin: 20px 0;
-    font-size: 25px;
+  .mobile-nav.active {
+    display: flex;
+  }
+
+  .top-right-links ul {
+    display: none;
   }
 
   .service-item {

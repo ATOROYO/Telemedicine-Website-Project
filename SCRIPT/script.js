@@ -1,12 +1,3 @@
-// Script fot the toggle button / Toggle functionality
-function toggleMobileMenu() {
-  console.log("Toggle Mobile Menu Clicked");
-  const menuToggle = document.querySelector(".menu-toggle");
-  const mobileNav = document.querySelector(".mobile-nav");
-  menuToggle.classList.toggle("active");
-  mobileNav.classList.toggle("active");
-}
-
 // JavaScript for Toggling Doctor Lists
 
 function showDoctors(specialty) {
@@ -144,9 +135,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-
-// togle menu/nav-bar Script
-$(".menu-btn").click(function () {
-  $("header .menu").toggleClass("active");
-  $(".menu-btn i").toggleClass("active");
+// Toggle mobile navigation
+document.getElementById("menu-toggle").addEventListener("click", function () {
+  const mobileNav = document.getElementById("mobile-nav");
+  mobileNav.classList.toggle("active");
 });
