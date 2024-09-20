@@ -665,44 +665,75 @@ nav ul li a {
 .consultation {
   padding: 2rem 1rem;
   background-color: #f4f4f4;
+  animation: fadeInUp 1s forwards;
+  opacity: 0;
 }
 
 .consultation h2,
 .consultation h3 {
   text-align: center;
   color: #00796b;
+  margin-bottom: 1rem;
+  animation: fadeInDown 1s forwards;
 }
 
 .consultation p {
   text-align: center;
   margin-bottom: 2rem;
+  animation: fadeInUp 1s forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+
+.specialties h3 {
+  color: #00796b;
+  margin-bottom: 1rem;
+  animation: fadeInUp 1s forwards;
+  opacity: 0;
 }
 
 /* Specialties */
 .specialties ul {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 1.5rem;
   list-style: none;
   padding: 0;
+  animation: fadeInUp 1s forwards;
+  animation-delay: 1s;
+  opacity: 0;
 }
 
 .specialties ul li {
   background-color: #00796b;
   color: white;
-  padding: 1rem;
+  padding: 1rem 2rem;
   cursor: pointer;
   border-radius: 5px;
   text-align: center;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 .specialties ul li:hover {
   background-color: #005f57;
+  transform: translateY(-5px);
+}
+
+.specialties ul li i {
+  display: block;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 /* Doctors Section */
 .doctors {
   margin-top: 2rem;
+}
+
+.doctors.active {
+  display: block;
+  animation: fadeInUp 1s forwards;
 }
 
 .doctor-list {
@@ -713,24 +744,41 @@ nav ul li a {
   text-align: center;
   color: #00796b;
   margin-bottom: 1.5rem;
+  animation: fadeInUp 1s forwards;
+  opacity: 0;
+}
+
+.doctor-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  animation: fadeInUp 1s forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
 }
 
 .doctor-card {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   background-color: white;
   padding: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.doctor-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .doctor-card img {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   object-fit: cover;
+  margin-bottom: 1rem;
 }
 
 .doctor-card h4 {
@@ -750,6 +798,7 @@ nav ul li a {
   padding: 0.5rem 1rem;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .video-call-button:hover {
@@ -759,10 +808,12 @@ nav ul li a {
 /* Consultation Form */
 .consultation-form {
   margin-top: 2rem;
-  background-color: #fff;
+  background-color: white;
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 1s forwards;
+  opacity: 0;
 }
 
 .consultation-form h3 {
@@ -798,6 +849,7 @@ nav ul li a {
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 .consultation-form input[type="text"]:focus,
