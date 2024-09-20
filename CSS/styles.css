@@ -85,14 +85,6 @@ nav ul li a {
   text-decoration: none;
 }
 
-/* Menu btn styling */
-.menu-btn {
-  color: #fff;
-  font-size: 23px;
-  cursor: pointer;
-  display: none;
-}
-
 /* Hero Section */
 #hero {
   background: #e0f7fa;
@@ -354,12 +346,14 @@ nav ul li a {
 #services {
   padding: 2rem;
   background-color: #f4f4f4;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .services-container {
   max-width: 1200px;
   margin: 0 auto;
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
   gap: 2rem;
 }
@@ -757,6 +751,7 @@ nav ul li a {
   margin-bottom: 1rem;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
 }
 
 .doctor-card img {
@@ -1037,28 +1032,8 @@ footer ul li a {
   }
 }
 
-/* Styles for devices with a max width of 600px (e.g., mobile phones) */
-@media (max-width: 600px) {
-  .container {
-    width: 95%;
-  }
-
-  nav ul {
-    text-align: left;
-  }
-
-  .service-item {
-    width: 100%;
-    margin-bottom: 1rem;
-  }
-
-  .service-list {
-    flex-direction: column;
-  }
-}
-
-/* Styles for devices with a max width of 1024px (e.g., tablets) */
-@media (max-width: 980px) {
+/* Styles for devices with a max width of 940px (e.g., tablets) */
+@media (max-width: 940px) {
   .menu-toggle {
     display: block;
   }
@@ -1110,6 +1085,7 @@ footer ul li a {
   display: inline;
 }
 
+/* Styles for devices with a max width of 600px (e.g., tablets) */
 @media (max-width: 600px) {
   .menu-toggle {
     display: block;
@@ -1128,6 +1104,23 @@ footer ul li a {
 
   .top-right-links {
     display: none; /* Hide top right links on smaller screens */
+  }
+
+  .container {
+    width: 95%;
+  }
+
+  nav ul {
+    text-align: left;
+  }
+
+  .service-item {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .service-list {
+    flex-direction: column;
   }
 
   .service-card {
@@ -1163,68 +1156,4 @@ footer ul li a {
 .text-link:hover {
   color: #009688;
   transition: color 0.3s ease;
-}
-
-/* Loading animation */
-.spinner {
-  border: 4px solid rgba(0, 0, 0, 0.1);
-  border-left: 4px solid #0044cc;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-.pulsing {
-  background-color: #00796b;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  animation: pulse 1.5s infinite;
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  50% {
-    transform: scale(1.5);
-    opacity: 0.5;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-/* Scroll animation */
-.parallax {
-  background-image: url("background.jpg");
-  height: 500px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* Scroll Reveal Example */
-.reveal {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
 }

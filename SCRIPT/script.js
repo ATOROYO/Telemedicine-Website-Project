@@ -135,6 +135,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
 // Toggle mobile navigation
 document.getElementById("menu-toggle").addEventListener("click", function () {
   const mobileNav = document.getElementById("mobile-nav");
