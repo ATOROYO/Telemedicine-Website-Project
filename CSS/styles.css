@@ -748,37 +748,32 @@ nav ul li a {
   opacity: 0;
 }
 
-.doctor-cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-  animation: fadeInUp 1s forwards;
-  animation-delay: 0.5s;
-  opacity: 0;
-}
-
 .doctor-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background-color: white;
   padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 250px;
-  text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.doctor-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .doctor-card img {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 1rem;
+}
+
+.doctor-card h4 {
+  margin: 0;
+  color: #333;
+}
+
+.doctor-card p {
+  margin: 0;
+  color: #777;
 }
 
 .doctor-card h4 {
