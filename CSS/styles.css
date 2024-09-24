@@ -1202,6 +1202,19 @@ footer ul li a {
   .specialties ul {
     flex-direction: column;
   }
+
+  .featured-article {
+    flex-direction: column;
+  }
+
+  .articles {
+    flex-direction: column;
+  }
+
+  .article {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
 }
 
 /* TO BE DELETED */
