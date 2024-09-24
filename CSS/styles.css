@@ -946,6 +946,15 @@ nav ul li a {
   flex-wrap: wrap;
 }
 
+.post {
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  width: 30%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
 /* Footer */
 footer {
   background: #0044cc;
