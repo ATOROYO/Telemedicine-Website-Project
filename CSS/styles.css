@@ -932,6 +932,8 @@ nav ul li a {
 .blog-section {
   padding: 50px 0;
   background-color: #f9f9f9;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .blog-section h2 {
@@ -941,9 +943,9 @@ nav ul li a {
 }
 
 .blog-posts {
-  display: flex;
+  /* display: flex; */
   justify-content: space-between;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .post {
