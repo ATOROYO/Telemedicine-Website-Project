@@ -943,9 +943,9 @@ nav ul li a {
 }
 
 .blog-posts {
-  /* display: flex; */
+  display: flex;
   justify-content: space-between;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
 }
 
 .post {
@@ -1205,7 +1205,7 @@ footer ul li a {
     flex-direction: column;
   }
 
-  .featured-article {
+  /* .featured-article {
     flex-direction: column;
   }
 
@@ -1216,7 +1216,7 @@ footer ul li a {
   .article {
     width: 100%;
     margin-bottom: 1.5rem;
-  }
+  } */
 }
 
 /* TO BE DELETED */
