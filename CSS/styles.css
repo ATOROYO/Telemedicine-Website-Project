@@ -966,6 +966,10 @@ nav ul li a {
   margin: 15px;
 }
 
+.post h3 a {
+  text-decoration: none;
+}
+
 .post p {
   font-size: 1rem;
   margin: 0 15px 20px;
