@@ -971,6 +971,18 @@ nav ul li a {
   margin: 0 15px 20px;
 }
 
+.read-more {
+  display: inline-block;
+  margin: 0 15px 15px;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
 /* Footer */
 footer {
   background: #0044cc;
