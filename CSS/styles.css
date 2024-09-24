@@ -961,6 +961,16 @@ nav ul li a {
   object-fit: cover;
 }
 
+.post h3 {
+  font-size: 1.5rem;
+  margin: 15px;
+}
+
+.post p {
+  font-size: 1rem;
+  margin: 0 15px 20px;
+}
+
 /* Footer */
 footer {
   background: #0044cc;
