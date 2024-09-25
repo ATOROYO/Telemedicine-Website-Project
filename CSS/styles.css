@@ -1018,6 +1018,18 @@ nav ul li a {
   flex-wrap: wrap;
 }
 
+.contact-form {
+  width: 60%;
+  animation: slideIn 1.5s ease-out;
+}
+
+.contact-form label {
+  display: block;
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
 /* Footer */
 footer {
   background: #0044cc;
