@@ -1011,6 +1011,13 @@ nav ul li a {
   animation: fadeIn 1.1s ease-out;
 }
 
+.contact-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
 /* Footer */
 footer {
   background: #0044cc;
