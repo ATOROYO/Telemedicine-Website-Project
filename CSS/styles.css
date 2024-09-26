@@ -1324,18 +1324,22 @@ footer ul li a {
     flex-direction: column;
   }
 
-  /* .featured-article {
+  .contact-grid {
     flex-direction: column;
+    align-items: center;
+    animation: fadeIn 1.5s ease-out;
   }
 
-  .articles {
-    flex-direction: column;
-  }
-
-  .article {
+  .contact-form,
+  .contact-info {
     width: 100%;
-    margin-bottom: 1.5rem;
-  } */
+    animation: fadeIn 1.5s ease-out;
+  }
+
+  .contact-info {
+    margin-top: 2rem;
+    animation: slideIn 1.5s ease-out;
+  }
 }
 
 /* TO BE DELETED */
