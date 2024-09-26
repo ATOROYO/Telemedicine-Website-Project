@@ -178,3 +178,17 @@ document.addEventListener("scroll", function () {
     }
   });
 });
+
+/// JavaScript for the Testimonial Slider ///
+let currentSlide = 0;
+const testimonials = document.querySelectorAll(".testimonial");
+
+// Fuction to show slide
+function showSlide(index) {
+  testimonials.forEach((testimonial, i) => {
+    testimonial.classList.remove("active");
+    if (i === index) {
+      testimonial.classList.add("active");
+    }
+  });
+}
