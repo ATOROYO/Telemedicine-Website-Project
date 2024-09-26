@@ -1063,6 +1063,35 @@ nav ul li a {
   transform: translateY(-3px);
 }
 
+.contact-info {
+  width: 35%;
+  animation: fadeIn 2s ease-out;
+}
+
+.contact-info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  animation: fadeIn 2s ease;
+}
+
+.contact-info p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #666;
+  animation: zoomIn 1.5s ease-out;
+}
+
+.contact-info i {
+  color: #007bff;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.contact-info i:hover {
+  transform: rotate(360deg);
+  transition: transform 0.5s ease;
+}
+
 /* Footer */
 footer {
   background: #0044cc;
