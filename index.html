@@ -138,22 +138,63 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section id="testimonials">
+    <section id="testimonials" class="testimonials-section">
       <div class="container">
-        <h2>What Our Patients Say</h2>
-        <div class="testimonial">
-          <p>
-            "The telemedicine service was incredibly convenient and the doctor
-            was very professional. Highly recommend!"
-          </p>
-          <cite>- Jane Doe</cite>
-        </div>
-        <div class="testimonial">
-          <p>
-            "I was able to get a consultation without leaving my home. The
-            service was quick and efficient."
-          </p>
-          <cite>- John Smith</cite>
+        <h2>Testimonials</h2>
+        <div class="testimonial-slider">
+          <!-- Left Arrow -->
+          <span class="prev" onclick="changeSlide(-1)">&#10094;</span>
+
+          <!-- Testimonial 1 -->
+          <div class="testimonial active">
+            <div class="testimonial-card">
+              <img
+                src="IMAGES/person1.jpg"
+                alt="Testimonial 1"
+                class="testimonial-image"
+              />
+              <p class="testimonial-quote">
+                "Lorem ipsum is simply dummy text of the industry standard
+                text."
+              </p>
+              <h3>Josephine</h3>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial">
+            <div class="testimonial-card">
+              <img
+                src="IMAGES/person2.jpg"
+                alt="Testimonial 2"
+                class="testimonial-image"
+              />
+              <p class="testimonial-quote">
+                "Lorem ipsum is simply dummy text of the industry standard
+                text."
+              </p>
+              <h3>James</h3>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial">
+            <div class="testimonial-card">
+              <img
+                src="IMAGES/person3.jpg"
+                alt="Testimonial 3"
+                class="testimonial-image"
+              />
+              <p class="testimonial-quote">
+                "Lorem ipsum is simply dummy text of the industry standard
+                text."
+              </p>
+              <h3>Emily</h3>
+            </div>
+          </div>
+
+          <!-- Right Arrow -->
+          <span class="next" onclick="changeSlide(1)">&#10095;</span>
         </div>
       </div>
     </section>
