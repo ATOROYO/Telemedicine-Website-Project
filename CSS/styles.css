@@ -188,44 +188,102 @@ nav ul li a {
   transform: scale(1.1);
 }
 
-/* Testimonials Section */
-#testimonials {
-  background: #f9f9f9;
-  padding: 2rem 0;
+/* Testimonial Section */
+.testimonials-section {
+  padding: 50px 0;
+  background-color: #f7f7f7;
   text-align: center;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 1s 1.5s forwards;
 }
 
-#testimonials h2 {
-  margin-bottom: 1rem;
+.testimonials-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.testimonial-slider {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .testimonial {
-  margin: 1rem auto;
-  max-width: 600px;
-  transform: scale(0.98);
-  opacity: 0;
-  animation: fadeInScale 1s forwards;
+  display: none;
+  justify-content: center;
+  align-items: center;
 }
 
-.testimonial:nth-child(1) {
-  animation-delay: 1.7s;
+.testimonial.active {
+  display: flex;
+  animation: fadeIn 1s ease-in-out;
 }
 
-.testimonial:nth-child(2) {
-  animation-delay: 1.9s;
+.testimonial-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+  margin: 0 15px;
 }
 
-.testimonial p {
+.testimonial-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.testimonial-quote {
   font-style: italic;
+  margin-bottom: 15px;
 }
 
-.testimonial cite {
-  display: block;
-  margin-top: 0.5rem;
+.testimonial-card h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+/* Arrows */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 10px;
+  margin-top: -22px;
+  color: #333;
   font-weight: bold;
+  font-size: 24px;
+  transition: 0.3s;
+  user-select: none;
+  z-index: 10;
+}
+
+.prev:hover,
+.next:hover {
+  color: #007bff;
+}
+
+.prev {
+  left: 20px;
+}
+
+.next {
+  right: 20px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Additional styles specific to the About page */
@@ -1305,6 +1363,16 @@ footer ul li a {
 
   .service-card {
     flex: 1 1 calc(50% - 2rem);
+  }
+
+  .testimonial-card {
+    width: 80%;
+  }
+
+  .prev,
+  .next {
+    font-size: 18px;
+    top: 40%;
   }
 
   .consultation-form {
