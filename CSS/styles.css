@@ -1092,6 +1092,13 @@ nav ul li a {
   transition: transform 0.5s ease;
 }
 
+.map-container {
+  margin-top: 2rem;
+  border-radius: 10px;
+  overflow: hidden;
+  animation: zoomIn 1.2s ease-out;
+}
+
 /* Footer */
 footer {
   background: #0044cc;
