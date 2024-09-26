@@ -1030,6 +1030,23 @@ nav ul li a {
   margin-bottom: 0.5rem;
 }
 
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: border 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  animation: zoomIn 0.5s ease-out;
+}
+
 /* Footer */
 footer {
   background: #0044cc;
