@@ -141,3 +141,27 @@ document.getElementById("menu-toggle").addEventListener("click", function () {
   const mobileNav = document.getElementById("mobile-nav");
   mobileNav.classList.toggle("active");
 });
+
+// Form Validation and Success Message For Contact Page
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+  let name = document.getElementById("name").value;
+  let email = document.getElementById("email").value;
+  let subject = document.getElementById("subject").value;
+  let message = document.getElementById("message").value;
+
+  // Simple Validation
+  if (name === "" || email === "" || subject === "" || message === "") {
+    alert("All fields are required!");
+  } else {
+    // Display Success Message
+    document.getElementById("successMessage").style.display = "block";
+    document.getElementById("successMessage").innerHTML =
+      "Thank you for contacting us, " +
+      name +
+      ". We will get back to you shortly.";
+
+    // Clear the form
+    document.getElementById("contactForm").reset();
+  }
+});
