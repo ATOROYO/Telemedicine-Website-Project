@@ -192,3 +192,14 @@ function showSlide(index) {
     }
   });
 }
+
+// Function to Change Slide
+function changeSlide(direction) {
+  currentSlide += direction;
+  if (currentSlide >= testimonials.length) {
+    currentSlide = 0;
+  } else if (currentSlide < 0) {
+    currentSlide = testimonials.length - 1;
+  }
+  showSlide(currentSlide);
+}
