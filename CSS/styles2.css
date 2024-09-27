@@ -94,16 +94,6 @@ nav ul li a {
   flex-wrap: wrap;
 }
 
-/* .blog-post {
-  background-color: white;
-  border-radius: 5px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 1rem;
-  width: 30%;
-  transition: transform 0.3s;
-} */
-
 .blog-post:hover {
   transform: scale(1.05);
 }
@@ -125,27 +115,8 @@ nav ul li a {
   color: #666;
 }
 
-/* .read-more {
-  display: block;
-  padding: 1rem;
-  background-color: #007bff;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  font-weight: bold;
-} */
-
 .read-more:hover {
   background-color: #0056b3;
-}
-
-/* Footer */
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
 }
 
 /* Mobile Responsiveness */
