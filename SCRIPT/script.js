@@ -180,29 +180,13 @@ document.addEventListener("scroll", function () {
 });
 
 /// JavaScript for the Testimonial Slider ///
-let currentSlide = 0;
-const testimonials = document.querySelectorAll(".testimonial");
+// JavaScript function to handle slide changes
+function changeSlide(n) {
+  const testimonials = document.querySelectorAll(".testimonial");
+  let currentSlide = document.querySelector(".testimonial.active");
+  let currentIndex = Array.from(testimonials).indexOf(currentSlide);
+  let newIndex = (currentIndex + n + testimonials.length) % testimonials.length;
 
-// Fuction to show slide
-function showSlide(index) {
-  testimonials.forEach((testimonial, i) => {
-    testimonial.classList.remove("active");
-    if (i === index) {
-      testimonial.classList.add("active");
-    }
-  });
+  currentSlide.classList.remove("active");
+  testimonials[newIndex].classList.add("active");
 }
-
-// Function to Change Slide
-function changeSlide(direction) {
-  currentSlide += direction;
-  if (currentSlide >= testimonials.length) {
-    currentSlide = 0;
-  } else if (currentSlide < 0) {
-    currentSlide = testimonials.length - 1;
-  }
-  showSlide(currentSlide);
-}
-
-// Show the first slide
-showSlide(currentSlide);
