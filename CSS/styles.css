@@ -1548,6 +1548,20 @@ footer {
     margin-top: 2rem;
     animation: slideIn 1.5s ease-out;
   }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-newsletter form {
+    flex-direction: column;
+  }
+
+  .footer-newsletter button {
+    margin-left: 0;
+    margin-top: 10px;
+  }
 }
 
 /* TO BE DELETED */
