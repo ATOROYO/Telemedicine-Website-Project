@@ -1373,6 +1373,19 @@ footer ul li a {
     text-align: left;
   }
 
+  #hero h1 {
+    font-size: 2.5rem;
+  }
+
+  #hero p {
+    font-size: 1.2rem;
+  }
+
+  .btn-cta {
+    font-size: 1rem;
+    padding: 12px 25px;
+  }
+
   .service-item {
     width: 100%;
     margin-bottom: 1rem;
