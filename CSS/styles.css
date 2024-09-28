@@ -158,6 +158,15 @@ nav ul li a {
   animation: fadeInUp 1s forwards;
 }
 
+#services h2::after {
+  content: "";
+  width: 80px;
+  height: 3px;
+  background-color: #3a77ff;
+  display: block;
+  margin: 20px auto 0;
+}
+
 .service-list {
   display: flex;
   justify-content: space-around;
