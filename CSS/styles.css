@@ -820,7 +820,7 @@ nav ul li a {
   opacity: 0;
 }
 
-#services h2 {
+.consultation h2 {
   font-size: 2.5rem;
   color: #333;
   margin-bottom: 40px;
@@ -829,7 +829,7 @@ nav ul li a {
   animation: fadeInUp 1s forwards;
 }
 
-#services h2::after {
+.consultation h2::after {
   content: "";
   width: 80px;
   height: 3px;
