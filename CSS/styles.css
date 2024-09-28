@@ -315,8 +315,11 @@ nav ul li a {
 }
 
 #about h2 {
-  margin-bottom: 1rem;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 40px;
+  position: relative;
+  font-weight: 700;
   animation: fadeInUp 1s forwards;
 }
 
