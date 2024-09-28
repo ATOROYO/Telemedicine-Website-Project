@@ -1194,7 +1194,7 @@ nav ul li a {
   animation: fadeInUp 1s forwards;
 }
 
-.blog-section h2::after {
+.contact-section h2::after {
   content: "";
   width: 80px;
   height: 3px;
