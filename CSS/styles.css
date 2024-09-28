@@ -1121,7 +1121,7 @@ nav ul li a {
   animation: fadeInUp 1s forwards;
 }
 
-.consultation h2::after {
+.blog-section h2::after {
   content: "";
   width: 80px;
   height: 3px;
