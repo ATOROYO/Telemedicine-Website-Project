@@ -218,7 +218,11 @@ nav ul li a {
 
 .testimonials-section h2 {
   font-size: 2.5rem;
-  margin-bottom: 2rem;
+  color: #333;
+  margin-bottom: 40px;
+  position: relative;
+  font-weight: 700;
+  animation: fadeInUp 1s forwards;
 }
 
 .testimonial-slider {
