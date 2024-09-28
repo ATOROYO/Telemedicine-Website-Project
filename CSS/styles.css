@@ -1113,8 +1113,21 @@ nav ul li a {
 
 .blog-section h2 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  color: #333;
   margin-bottom: 40px;
+  position: relative;
+  font-weight: 700;
+  animation: fadeInUp 1s forwards;
+}
+
+.consultation h2::after {
+  content: "";
+  width: 80px;
+  height: 3px;
+  background-color: #3a77ff;
+  display: block;
+  margin: 20px auto 0;
 }
 
 .blog-posts {
