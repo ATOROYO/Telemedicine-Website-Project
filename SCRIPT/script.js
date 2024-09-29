@@ -1,7 +1,13 @@
 // JavaScript for Toggling Doctor Lists
+// function toggleMenu() {
+//   const mobileNav = document.querySelector(".mobile-nav");
+//   mobileNav.classList.toggle("show");
+// }
+// Toggle Mobile Navigation Menu
 function toggleMenu() {
-  const mobileNav = document.querySelector(".mobile-nav");
-  mobileNav.classList.toggle("show");
+  const menuToggle = document.querySelector(".menu-toggle");
+  menuToggle.classList.toggle("active");
+  document.querySelector(".mobile-nav").classList.toggle("active");
 }
 
 function showDoctors(specialty) {
