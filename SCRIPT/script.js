@@ -6,8 +6,14 @@
 // Toggle Mobile Navigation Menu
 function toggleMenu() {
   const menuToggle = document.querySelector(".menu-toggle");
-  menuToggle.classList.toggle("active");
-  document.querySelector(".mobile-nav").classList.toggle("active");
+  if (menuToggle) {
+    menuToggle.classList.toggle("active");
+
+    const mobileNav = document.querySelector(".mobile-nav");
+    if (mobileNav) {
+      mobileNav.classList.toggle("active");
+    }
+  }
 }
 
 function showDoctors(specialty) {
