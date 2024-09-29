@@ -1622,7 +1622,7 @@ footer {
 }
 
 /* Styles for devices with a max width of 600px (e.g., tablets) */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .top-right-links {
     display: none;
   }
