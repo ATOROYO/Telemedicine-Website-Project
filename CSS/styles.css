@@ -1714,6 +1714,22 @@ footer {
     display: flex;
   }*/
 
+  .menu-toggle {
+    display: block;
+  }
+
+  .top-right-links {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+
+  .menu-open {
+    left: 0;
+  }
+
   #hero p {
     font-size: 1.2rem;
   }

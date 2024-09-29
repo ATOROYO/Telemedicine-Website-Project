@@ -4,17 +4,31 @@
 //   mobileNav.classList.toggle("show");
 // }
 // Toggle Mobile Navigation Menu
-function toggleMenu() {
-  const menuToggle = document.querySelector(".menu-toggle");
-  if (menuToggle) {
-    menuToggle.classList.toggle("active");
+// function toggleMenu() {
+//   const menuToggle = document.querySelector(".menu-toggle");
+//   if (menuToggle) {
+//     menuToggle.classList.toggle("active");
 
-    const mobileNav = document.querySelector(".mobile-nav");
-    if (mobileNav) {
-      mobileNav.classList.toggle("active");
-    }
-  }
-}
+//     const mobileNav = document.querySelector(".mobile-nav");
+//     if (mobileNav) {
+//       mobileNav.classList.toggle("active");
+//     }
+//   }
+// }
+
+const menuToggle = document.getElementById("menuToggle");
+const mobileNav = document.getElementById("mobileNav");
+const closeMenu = document.getElementById("closeMenu");
+
+// Open Menu
+menuToggle.addEventListener("click", function () {
+  mobileNav.classList.add("menu-open");
+});
+
+// Close Menu
+closeMenu.addEventListener("click", function () {
+  mobileNav.classList.remove("menu-open");
+});
 
 function showDoctors(specialty) {
   // Hide all doctor lists
