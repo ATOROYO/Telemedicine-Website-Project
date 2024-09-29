@@ -1680,7 +1680,7 @@ footer {
     margin-bottom: 5px;
   }*/
 
-  .top-right-links ul {
+  /*.top-right-links ul {
     display: none;
   }
 
@@ -1695,7 +1695,7 @@ footer {
     background-color: #00796b;
     position: absolute;
     top: 60px; /* Adjust based on header height */
-    right: 0;
+  /*right: 0;
     width: 100%;
     padding: 1rem 0;
   }
@@ -1712,7 +1712,7 @@ footer {
 
   .top-right-links.active + .mobile-nav {
     display: flex;
-  }
+  }*/
 
   #hero p {
     font-size: 1.2rem;
