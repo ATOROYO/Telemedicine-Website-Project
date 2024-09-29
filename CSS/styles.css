@@ -1690,7 +1690,7 @@ footer {
   }
 
   .mobile-nav {
-    display: none;
+    display: block;
     flex-direction: column;
     background-color: #00796b;
     position: absolute;
