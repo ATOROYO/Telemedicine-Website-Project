@@ -1,8 +1,8 @@
 // JavaScript for Toggling Doctor Lists
-// function toggleMenu() {
-//   const mobileNav = document.querySelector(".mobile-nav");
-//   mobileNav.classList.toggle("show");
-// }
+function toggleMenu() {
+  const mobileNav = document.querySelector(".mobile-nav");
+  mobileNav.classList.toggle("show");
+}
 // Toggle Mobile Navigation Menu
 // function toggleMenu() {
 //   const menuToggle = document.querySelector(".menu-toggle");
@@ -16,29 +16,29 @@
 //   }
 // }
 
-const menuToggle = document.getElementById("menuToggle");
-const mobileNav = document.getElementById("mobileNav");
-const closeMenu = document.getElementById("closeMenu");
+// const menuToggle = document.getElementById("menuToggle");
+// const mobileNav = document.getElementById("mobileNav");
+// const closeMenu = document.getElementById("closeMenu");
 
-// Open Menu
-menuToggle.addEventListener("click", function () {
-  mobileNav.classList.add("menu-open");
-});
+// // Open Menu
+// menuToggle.addEventListener("click", function () {
+//   mobileNav.classList.add("menu-open");
+// });
 
-// Close Menu
-closeMenu.addEventListener("click", function () {
-  mobileNav.classList.remove("menu-open");
-});
+// // Close Menu
+// closeMenu.addEventListener("click", function () {
+//   mobileNav.classList.remove("menu-open");
+// });
 
-function showDoctors(specialty) {
-  // Hide all doctor lists
-  document
-    .querySelectorAll(".doctor-list")
-    .forEach((list) => (list.style.display = "none"));
+// function showDoctors(specialty) {
+//   // Hide all doctor lists
+//   document
+//     .querySelectorAll(".doctor-list")
+//     .forEach((list) => (list.style.display = "none"));
 
-  // Show the selected specialty's doctor list
-  document.getElementById(specialty).style.display = "block";
-}
+//   // Show the selected specialty's doctor list
+//   document.getElementById(specialty).style.display = "block";
+// }
 
 // JavaScript for Dynamic Doctor Selection in Form
 const specialtyDropdown = document.getElementById("specialty");
