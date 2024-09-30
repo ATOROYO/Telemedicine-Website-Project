@@ -1,7 +1,7 @@
 // togle menu/nav-bar Script
 $(document).ready(function () {
   $(".menu-btn").click(function () {
-    $("header .menu").toggleClass("active");
-    $("header i").toggleClass("active");
+    $(".nav-bar .menu").toggleClass("active");
+    $(".nav-bar i").toggleClass("active");
   });
 });

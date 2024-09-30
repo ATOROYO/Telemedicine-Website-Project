@@ -1,8 +1,8 @@
 // JavaScript for Toggling Doctor Lists
-function toggleMenu() {
-  const mobileNav = document.querySelector(".mobile-nav");
-  mobileNav.classList.toggle("show");
-}
+// function toggleMenu() {
+//   const mobileNav = document.querySelector(".mobile-nav");
+//   mobileNav.classList.toggle("show");
+// }
 // Toggle Mobile Navigation Menu
 // function toggleMenu() {
 //   const menuToggle = document.querySelector(".menu-toggle");

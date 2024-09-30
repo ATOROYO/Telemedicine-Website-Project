@@ -1,4 +1,11 @@
 /* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -25,6 +32,8 @@ header {
   justify-content: space-between;
   align-items: center;
   animation: slideInFromTop 1s ease-out;
+  position: fixed;
+  z-index: 999;
 }
 
 /* Logo Container */
@@ -1581,7 +1590,7 @@ footer {
 
 /* Styles for devices with a max width of 940px (e.g., tablets) */
 @media (max-width: 940px) {
-  .menu-toggle {
+  /* .menu-toggle {
     display: block;
   }
 
@@ -1607,7 +1616,7 @@ footer {
 
   .top-right-links ul {
     display: none;
-  }
+  } */
 
   .service-item {
     width: 45%;
@@ -1643,7 +1652,7 @@ footer {
     content: "\f00d";
   }
 
-  header .menu {
+  .nav-bar .menu {
     position: fixed;
     height: 100vh;
     width: 100%;
@@ -1655,17 +1664,17 @@ footer {
     transition: all 0.3s ease;
   }
 
-  header .menu.active {
+  .nav-bar .menu.active {
     left: 0;
   }
 
-  header .menu li {
+  .nav-bar .menu li {
     display: block;
   }
 
-  header .menu li a {
+  .nav-bar .menu li a {
     display: inline-block;
-    margin: 20px 0;
+    margin: 10px 0;
     font-size: 25px;
   }
 
