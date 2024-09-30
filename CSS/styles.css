@@ -85,6 +85,13 @@ nav ul li a {
   text-decoration: none;
 }
 
+.menu-btn {
+  color: #fff;
+  font-size: 23px;
+  cursor: pointer;
+  display: none;
+}
+
 /* Hero Section */
 /* Hero Section */
 #hero {
