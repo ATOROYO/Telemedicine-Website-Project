@@ -50,7 +50,7 @@ header {
 }
 
 .top-right-links ul li {
-  display: inline;
+  display: inline-block;
 }
 
 .top-right-links ul li a {
@@ -1645,7 +1645,7 @@ footer {
     width: 100%;
     left: -100%;
     top: 0;
-    background: #e3aadd;
+    background: #0044cc;
     text-align: center;
     padding-top: 80px;
     transition: all 0.3s ease;
