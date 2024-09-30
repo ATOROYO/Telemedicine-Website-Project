@@ -1655,6 +1655,16 @@ footer {
     left: 0;
   }
 
+  header .menu li {
+    display: block;
+  }
+
+  header .menu li a {
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 25px;
+  }
+
   /*.top-right-links {
     display: inline;
   }
