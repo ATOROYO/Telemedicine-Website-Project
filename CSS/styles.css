@@ -1639,6 +1639,22 @@ footer {
     content: "\f00d";
   }
 
+  header .menu {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    background: #e3aadd;
+    text-align: center;
+    padding-top: 80px;
+    transition: all 0.3s ease;
+  }
+
+  header .menu.active {
+    left: 0;
+  }
+
   /*.top-right-links {
     display: inline;
   }
