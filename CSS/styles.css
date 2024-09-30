@@ -1623,7 +1623,7 @@ footer {
 
 /* Styles for devices with a max width of 600px (e.g., tablets) */
 @media (max-width: 768px) {
-  /*.top-right-links {
+  .top-right-links {
     display: block;
   }
 
@@ -1651,10 +1651,10 @@ footer {
 
   .mobile-nav.show {
     transform: translateX(0);
-  }*/
+  }
 
   /* Submenu styles */
-  /*.submenu-toggle {
+  .submenu-toggle {
     position: absolute;
     top: 0;
     right: 0;
@@ -1678,7 +1678,7 @@ footer {
     height: 2px;
     background-color: #666;
     margin-bottom: 5px;
-  }*/
+  }
 
   /*.top-right-links ul {
     display: none;
@@ -1714,7 +1714,7 @@ footer {
     display: flex;
   }*/
 
-  .menu-toggle {
+  /* .menu-toggle {
     display: block;
   }
 
@@ -1728,7 +1728,7 @@ footer {
 
   .menu-open {
     left: 0;
-  }
+  } */
 
   #hero p {
     font-size: 1.2rem;
