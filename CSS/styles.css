@@ -1624,7 +1624,7 @@ footer {
 /* Styles for devices with a max width of 600px (e.g., tablets) */
 @media (max-width: 768px) {
   .top-right-links {
-    display: block;
+    display: inline;
   }
 
   .menu-toggle {
@@ -1637,7 +1637,7 @@ footer {
   }
 
   .mobile-nav {
-    display: block;
+    display: inline;
     position: absolute;
     top: 0;
     right: 0;
