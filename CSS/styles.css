@@ -1630,6 +1630,15 @@ footer {
 
 /* Styles for devices with a max width of 600px (e.g., tablets) */
 @media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+    z-index: 999;
+  }
+
+  .menu-btn i.active:before {
+    content: "\f00d";
+  }
+
   /*.top-right-links {
     display: inline;
   }
