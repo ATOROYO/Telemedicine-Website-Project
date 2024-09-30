@@ -30,15 +30,15 @@
 //   mobileNav.classList.remove("menu-open");
 // });
 
-// function showDoctors(specialty) {
-//   // Hide all doctor lists
-//   document
-//     .querySelectorAll(".doctor-list")
-//     .forEach((list) => (list.style.display = "none"));
+function showDoctors(specialty) {
+  // Hide all doctor lists
+  document
+    .querySelectorAll(".doctor-list")
+    .forEach((list) => (list.style.display = "none"));
 
-//   // Show the selected specialty's doctor list
-//   document.getElementById(specialty).style.display = "block";
-// }
+  // Show the selected specialty's doctor list
+  document.getElementById(specialty).style.display = "block";
+}
 
 // JavaScript for Dynamic Doctor Selection in Form
 const specialtyDropdown = document.getElementById("specialty");
