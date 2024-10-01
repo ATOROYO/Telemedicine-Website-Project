@@ -1,18 +1,3 @@
-h1 {
-  font-size: 1.5rem;
-  color: #fff;
-}
-
-.top-right-links ul {
-  list-style: none;
-  display: flex;
-  margin: 0;
-}
-
-.top-right-links li {
-  margin-left: 20px;
-}
-
 .top-right-links li a {
   color: white;
   text-decoration: none;
