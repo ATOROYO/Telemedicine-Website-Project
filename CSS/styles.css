@@ -1745,6 +1745,11 @@ footer {
     animation: slideIn 1.5s ease-out;
   }
 
+  .footer-about p {
+    /* flex-direction: column; */
+    text-align: center;
+  }
+
   .footer-container {
     flex-direction: column;
     text-align: center;
