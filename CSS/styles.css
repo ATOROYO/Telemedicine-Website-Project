@@ -1726,22 +1726,6 @@ footer {
     margin-bottom: 5px;
   }*/
 
-  /*.top-right-links ul {
-    display: none;
-  }
-
-  .menu-toggle {
-    display: block;
-    color: white;
-  }
-
-  .mobile-nav {
-    display: block;
-    flex-direction: column;
-    background-color: #00796b;
-    position: absolute;
-    top: 60px; /* Adjust based on header height */
-
   #hero p {
     font-size: 1.2rem;
   }
