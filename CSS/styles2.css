@@ -1,15 +1,3 @@
-.top-right-links li a {
-  color: white;
-  text-decoration: none;
-}
-
-.menu-toggle {
-  display: none;
-  font-size: 2rem;
-  color: white;
-  cursor: pointer;
-}
-
 nav ul {
   list-style-type: none;
   margin: 0;
