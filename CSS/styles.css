@@ -47,6 +47,7 @@ header {
   width: 50px; /* Adjust width as needed */
   height: auto;
   margin-right: 10px;
+  border-radius: 6px;
 }
 
 /* Top Right Links */
