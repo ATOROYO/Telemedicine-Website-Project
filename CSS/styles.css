@@ -74,6 +74,12 @@ header {
   font-size: 0.9rem; /* Adjust size as needed */
 }
 
+.top-right-links ul li a:hover {
+  color: red;
+  text-decoration: none;
+  font-size: 0.9rem; /* Adjust size as needed */
+}
+
 .top-right-links ul li a i {
   margin-right: 5px;
   vertical-align: middle;
