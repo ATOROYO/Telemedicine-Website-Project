@@ -170,7 +170,8 @@ nav ul li a:hover {
 }
 
 .btn-primary:hover {
-  background: #004d40;
+  background: #f3dcdc;
+  color: #caa8e9;
   transform: scale(1.1);
 }
 
