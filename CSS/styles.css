@@ -805,13 +805,14 @@ nav ul li a:hover {
 }
 
 .signup-box p a {
-  color: #00796b;
+  color: #e3aadd;
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .signup-box p a:hover {
-  color: #004d40;
+  color: #fff;
+  background: #f3dcdc;
 }
 
 /* Basic styles for login pages */
