@@ -680,14 +680,16 @@ nav ul li a:hover {
 }
 
 #signup a {
-  color: #00796b;
+  background: #e3aadd;
+  color: #fff;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
 }
 
 #signup a:hover {
-  color: #004d40;
+  background: #f3dcdc;
+  color: #fff;
 }
 
 /* Basic styles for login pages */
