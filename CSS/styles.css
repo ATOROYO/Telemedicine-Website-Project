@@ -785,7 +785,7 @@ nav ul li a:hover {
 .signup-box button {
   width: 100%;
   padding: 0.8rem;
-  background-color: #00796b;
+  background-color: #e3aadd;
   color: white;
   border: none;
   border-radius: 4px;
@@ -795,7 +795,8 @@ nav ul li a:hover {
 }
 
 .signup-box button:hover {
-  background-color: #004d40;
+  background-color: #f3dcdc;
+  color: #fff;
 }
 
 .signup-box p {
