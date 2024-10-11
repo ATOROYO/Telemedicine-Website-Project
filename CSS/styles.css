@@ -1062,12 +1062,12 @@ nav ul li a:hover {
 .consultation-form input[type="time"]:focus,
 .consultation-form select:focus {
   outline: none;
-  border-color: #00796b;
-  box-shadow: 0 0 5px rgba(0, 121, 107, 0.5);
+  border-color: #e3aadd;
+  box-shadow: 0 0 5px #c8a8e9;
 }
 
 .consultation-form button[type="submit"] {
-  background-color: #00796b;
+  background-color: #e3aadd;
   color: white;
   padding: 0.75rem;
   border: none;
