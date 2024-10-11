@@ -857,7 +857,6 @@ nav ul li a:hover {
 }
 
 .consultation h2 {
-  text-align: center;
   font-size: 2.5rem;
   color: #333;
   margin-bottom: 40px;
@@ -868,11 +867,11 @@ nav ul li a:hover {
 
 .consultation h2::after {
   content: "";
-  width: 80px;
-  height: 3px;
-  background-color: #3a77ff;
+  width: 130px;
+  height: 5px;
+  background-color: #c8a8e9;
   display: block;
-  margin: 20px auto 0;
+  margin: 10px auto 0;
 }
 
 .consultation h3 {
