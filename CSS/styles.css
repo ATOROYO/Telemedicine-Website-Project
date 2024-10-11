@@ -689,7 +689,7 @@ nav ul li a:hover {
 
 #signup a:hover {
   background: #f3dcdc;
-  color: #fff;
+  color: #c8a8e9;
 }
 
 /* Basic styles for login pages */
@@ -737,19 +737,6 @@ nav ul li a:hover {
 
 .login-box input[type="submit"]:hover {
   background-color: #c8a8e9;
-}
-
-.login-box a {
-  display: block;
-  margin-top: 1rem;
-  background: #e3aadd;
-  color: #fff;
-  text-decoration: none;
-}
-
-.login-box a:hover {
-  color: #c8a8e9;
-  background: #f3dcdc;
 }
 
 /* Sign-up page styles */
@@ -862,17 +849,6 @@ nav ul li a:hover {
 
 .login-box input[type="submit"]:hover {
   background-color: #e3aadd;
-}
-
-.login-box a {
-  display: block;
-  margin-top: 1rem;
-  color: #e3aadd;
-  text-decoration: none;
-}
-
-.login-box a:hover {
-  color: #e3aadd;
 }
 
 /* Consultation Section */
