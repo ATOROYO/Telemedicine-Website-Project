@@ -1081,6 +1081,7 @@ nav ul li a:hover {
   background-color: #f3dcdc;
   color: #c8a8e9;
   font-weight: bolder;
+  border-style: 5px #c8a8e9;
 }
 
 /* FAQ Page Styles */
