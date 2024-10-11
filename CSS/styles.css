@@ -948,6 +948,7 @@ nav ul li a:hover {
 .specialties ul li:hover {
   background-color: #f3dcdc;
   color: #c8a8e9;
+  font-weight: bolder;
   transform: translateY(-5px);
 }
 
