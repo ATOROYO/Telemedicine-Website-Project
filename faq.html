@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FAQ - Telemedicine Service</title>
     <link rel="stylesheet" href="CSS/styles.css" />
-    <link rel="stylesheet" href="CSS/nav-toggle.css" />
+    <!-- <link rel="stylesheet" href="CSS/nav-toggle.css" /> -->
 
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
@@ -246,31 +246,31 @@
         mobileNav.classList.toggle("active");
       }
 
-      // FAQ Toggle Functionality
-      document.addEventListener("DOMContentLoaded", function () {
-        const faqQuestions = document.querySelectorAll(".faq-question");
+      // // FAQ Toggle Functionality
+      // document.addEventListener("DOMContentLoaded", function () {
+      //   const faqQuestions = document.querySelectorAll(".faq-question");
 
-        faqQuestions.forEach((question) => {
-          question.addEventListener("click", () => {
-            // Toggle active class on parent faq-item
-            const faqItem = question.parentElement;
-            faqItem.classList.toggle("active");
+      //   faqQuestions.forEach((question) => {
+      //     question.addEventListener("click", () => {
+      //       // Toggle active class on parent faq-item
+      //       const faqItem = question.parentElement;
+      //       faqItem.classList.toggle("active");
 
-            // Toggle the display of the answer
-            const answer = faqItem.querySelector(".faq-answer");
-            const icon = question.querySelector(".toggle-icon i");
-            if (faqItem.classList.contains("active")) {
-              answer.style.display = "block";
-              icon.classList.remove("fa-plus");
-              icon.classList.add("fa-minus");
-            } else {
-              answer.style.display = "none";
-              icon.classList.remove("fa-minus");
-              icon.classList.add("fa-plus");
-            }
-          });
-        });
-      });
+      //       // Toggle the display of the answer
+      //       const answer = faqItem.querySelector(".faq-answer");
+      //       const icon = question.querySelector(".toggle-icon i");
+      //       if (faqItem.classList.contains("active")) {
+      //         answer.style.display = "block";
+      //         icon.classList.remove("fa-plus");
+      //         icon.classList.add("fa-minus");
+      //       } else {
+      //         answer.style.display = "none";
+      //         icon.classList.remove("fa-minus");
+      //         icon.classList.add("fa-plus");
+      //       }
+      //     });
+      //   });
+      // });
     </script>
     <script src="SCRIPT/test.js"></script>
     <script src="SCRIPT/script.js"></script>
