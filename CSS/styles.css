@@ -742,12 +742,14 @@ nav ul li a:hover {
 .login-box a {
   display: block;
   margin-top: 1rem;
-  color: #c8a8e9;
+  background: #e3aadd;
+  color: #fff;
   text-decoration: none;
 }
 
 .login-box a:hover {
-  color: #e3aadd;
+  color: #c8a8e9;
+  background: #f3dcdc;
 }
 
 /* Sign-up page styles */
