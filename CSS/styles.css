@@ -947,6 +947,7 @@ nav ul li a:hover {
 
 .specialties ul li:hover {
   background-color: #f3dcdc;
+  color: #c8a8e9;
   transform: translateY(-5px);
 }
 
