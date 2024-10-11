@@ -994,7 +994,7 @@ nav ul li a:hover {
 }
 
 .video-call-button {
-  background-color: #00796b;
+  background-color: #e3aadd;
   color: white;
   border: none;
   padding: 0.5rem 1rem;
@@ -1004,7 +1004,8 @@ nav ul li a:hover {
 }
 
 .video-call-button:hover {
-  background-color: #005f57;
+  background-color: #f3dcdc;
+  color: #c8a8e9;
 }
 
 /* Consultation Form */
