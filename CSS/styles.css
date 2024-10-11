@@ -1088,7 +1088,7 @@ nav ul li a:hover {
 .faq-container {
   max-width: 800px;
   margin: 0 auto;
-  padding: 20px;
+  /* padding: 150px 20px 20px 20px; */
   background-color: white;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -1096,6 +1096,7 @@ nav ul li a:hover {
 }
 
 .faq-container h1 {
+  /* padding-top: 150px; */
   text-align: center;
   color: #7a3f74;
   margin-bottom: 20px;
