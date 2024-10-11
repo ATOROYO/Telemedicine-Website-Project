@@ -1087,7 +1087,7 @@ nav ul li a:hover {
 /* FAQ Page Styles */
 .faq-container {
   max-width: 800px;
-  margin: 100px auto 60px auto; /* Adjusted for fixed header */
+  margin: 0 auto;
   padding: 20px;
   background-color: white;
   border-radius: 8px;
