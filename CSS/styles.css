@@ -1284,7 +1284,7 @@ nav ul li a:hover {
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  border-color: #007bff;
+  border-color: #c8a8e9;
   outline: none;
   animation: zoomIn 0.5s ease-out;
 }
