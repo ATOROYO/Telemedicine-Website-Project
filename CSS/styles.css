@@ -1747,6 +1747,10 @@ footer {
     animation: slideIn 1.5s ease-out;
   }
 
+  .post {
+    width: 100%;
+  }
+
   .footer-about p {
     /* flex-direction: column; */
     text-align: center;
