@@ -1326,7 +1326,7 @@ nav ul li a:hover {
 }
 
 .contact-info i {
-  color: #007bff;
+  color: #c8a8e9;
   margin-right: 10px;
   transition: transform 0.3s ease;
 }
@@ -1424,7 +1424,7 @@ footer {
 }
 
 .footer-contact i {
-  color: #3a77ff;
+  color: #c8a8e9;
   margin-right: 10px;
 }
 
@@ -1445,7 +1445,7 @@ footer {
 
 .footer-newsletter button {
   padding: 10px 20px;
-  background-color: #3a77ff;
+  background-color: #e3aadd;
   border: none;
   color: #fff;
   font-size: 1rem;
@@ -1456,7 +1456,9 @@ footer {
 }
 
 .footer-newsletter button:hover {
-  background-color: #2e63d9;
+  background-color: #f3dcdc;
+  color: #c8a8e9;
+  font-weight: bold;
 }
 
 .social-icons a {
