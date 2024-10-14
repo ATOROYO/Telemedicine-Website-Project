@@ -45,14 +45,3 @@
   padding: 0 1rem;
   color: #666;
 }
-
-/* Mobile Responsiveness */
-@media (max-width: 1024px) {
-  .blog-post {
-    width: 45%;
-  }
-
-  .blog-posts {
-    justify-content: center;
-  }
-}
