@@ -1509,7 +1509,7 @@ footer {
 
 /* Link Hover Effect */
 .footer-links a:hover {
-  color: #3a77ff;
+  color: #c8a8e9;
   transform: translateX(5px);
   transition: transform 0.3s ease-in-out;
 }
