@@ -101,12 +101,4 @@
 }
 
 @media (max-width: 480px) {
-  /* For smaller mobile phones */
-  h1 {
-    font-size: 1rem;
-  }
-
-  .post {
-    width: 100%;
-  
 }
