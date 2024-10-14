@@ -108,17 +108,5 @@
 
   .post {
     width: 100%;
-  }
-
-  .blog-post {
-    width: 100%;
-  }
-
-  .blog-post img {
-    height: 150px;
-  }
-
-  .read-more {
-    padding: 0.5rem;
-  }
+  
 }
