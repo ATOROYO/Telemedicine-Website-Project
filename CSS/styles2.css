@@ -75,14 +75,4 @@
   h1 {
     font-size: 1.2rem;
   }
-
-  .top-right-links ul {
-    flex-direction: column;
-    margin-top: 1rem;
-  }
-
-  .top-right-links li {
-    margin: 0;
-    margin-bottom: 10px;
-  }
 }
