@@ -58,20 +58,6 @@
 }
 
 @media (max-width: 768px) {
-  /* For tablets and larger mobile phones */
-  .blog-posts {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .blog-post {
-    width: 90%;
-  }
-
-  .logo {
-    width: 50px;
-  }
-
   h1 {
     font-size: 1.2rem;
   }
