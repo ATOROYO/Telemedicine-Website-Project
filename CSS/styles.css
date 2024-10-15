@@ -1469,8 +1469,9 @@ footer {
 }
 
 .footer-newsletter button:hover {
-  background-color: #f3dcdc;
-  color: #c8a8e9;
+  color: #7a3f74;
+  transform: scale(1.1);
+  border: 2px solid #7a3f74;
   font-weight: bold;
 }
 
