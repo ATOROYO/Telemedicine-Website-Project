@@ -1090,9 +1090,10 @@ nav ul li a:hover {
 
 .consultation-form button[type="submit"]:hover {
   background-color: #f3dcdc;
-  color: #c8a8e9;
-  font-weight: bolder;
-  border-style: 5px #c8a8e9;
+  font-weight: 600;
+  color: #7a3f74;
+  transform: scale(1.1);
+  border: 2px solid #7a3f74;
 }
 
 /* FAQ Page Styles */
