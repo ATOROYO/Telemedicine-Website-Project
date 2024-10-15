@@ -790,8 +790,9 @@ nav ul li a:hover {
 }
 
 .signup-box button:hover {
-  background-color: #f3dcdc;
-  color: #fff;
+  color: #7a3f74;
+  transform: scale(1.1);
+  border: 2px solid #7a3f74;
 }
 
 .signup-box p {
