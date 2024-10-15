@@ -807,8 +807,9 @@ nav ul li a:hover {
 }
 
 .signup-box p a:hover {
-  color: #c8a8e9;
-  background: #f3dcdc;
+  color: #7a3f74;
+  transform: scale(1.1);
+  border: 2px solid #7a3f74;
 }
 
 /* Basic styles for login pages */
