@@ -18,9 +18,3 @@
   font-size: 1rem;
   color: #666;
 }
-
-.blog-posts {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
