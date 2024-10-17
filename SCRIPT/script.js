@@ -25,11 +25,6 @@
 //   mobileNav.classList.add("menu-open");
 // });
 
-// // Close Menu
-// closeMenu.addEventListener("click", function () {
-//   mobileNav.classList.remove("menu-open");
-// });
-
 function showDoctors(specialty) {
   // Hide all doctor lists
   document
