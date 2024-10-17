@@ -1,5 +1,3 @@
-// JavaScript for Toggling Doctor Lists
-
 function showDoctors(specialty) {
   // Hide all doctor lists
   document
