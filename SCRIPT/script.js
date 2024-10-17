@@ -20,11 +20,6 @@
 // const mobileNav = document.getElementById("mobileNav");
 // const closeMenu = document.getElementById("closeMenu");
 
-// // Open Menu
-// menuToggle.addEventListener("click", function () {
-//   mobileNav.classList.add("menu-open");
-// });
-
 function showDoctors(specialty) {
   // Hide all doctor lists
   document
