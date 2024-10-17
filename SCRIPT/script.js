@@ -1,3 +1,4 @@
+// JavaScript function for doctor button
 function showDoctors(specialty) {
   // Hide all doctor lists
   document
