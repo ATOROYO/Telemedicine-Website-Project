@@ -1,8 +1,8 @@
 // JavaScript for Toggling Doctor Lists
-// function toggleMenu() {
-//   const mobileNav = document.querySelector(".mobile-nav");
-//   mobileNav.classList.toggle("show");
-// }
+function toggleMenu() {
+  const mobileNav = document.querySelector(".mobile-nav");
+  mobileNav.classList.toggle("show");
+}
 
 function showDoctors(specialty) {
   // Hide all doctor lists
