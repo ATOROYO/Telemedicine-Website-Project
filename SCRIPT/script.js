@@ -18,7 +18,6 @@
 
 // const menuToggle = document.getElementById("menuToggle");
 // const mobileNav = document.getElementById("mobileNav");
-const closeMenu = document.getElementById("closeMenu");
 
 function showDoctors(specialty) {
   // Hide all doctor lists
