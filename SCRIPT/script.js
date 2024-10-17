@@ -4,17 +4,6 @@
 //   mobileNav.classList.toggle("show");
 // }
 // Toggle Mobile Navigation Menu
-function toggleMenu() {
-  const menuToggle = document.querySelector(".menu-toggle");
-  if (menuToggle) {
-    menuToggle.classList.toggle("active");
-
-    const mobileNav = document.querySelector(".mobile-nav");
-    if (mobileNav) {
-      mobileNav.classList.toggle("active");
-    }
-  }
-}
 
 function showDoctors(specialty) {
   // Hide all doctor lists
