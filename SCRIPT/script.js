@@ -3,7 +3,6 @@
 //   const mobileNav = document.querySelector(".mobile-nav");
 //   mobileNav.classList.toggle("show");
 // }
-// Toggle Mobile Navigation Menu
 
 function showDoctors(specialty) {
   // Hide all doctor lists
