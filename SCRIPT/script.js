@@ -17,7 +17,6 @@
 // }
 
 // const menuToggle = document.getElementById("menuToggle");
-const mobileNav = document.getElementById("mobileNav");
 
 function showDoctors(specialty) {
   // Hide all doctor lists
