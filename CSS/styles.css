@@ -1411,6 +1411,7 @@ footer {
 .footer-about .footer-logo {
   width: 150px;
   margin-bottom: 20px;
+  border-radius: 10px;
 }
 
 .footer-about p {
