@@ -1,3 +1,11 @@
+// togle menu/nav-bar Script
+$(document).ready(function () {
+  $(".menu-btn").click(function () {
+    $(".nav-bar .menu").toggleClass("active");
+    $(".nav-bar i").toggleClass("active");
+  });
+});
+
 // JavaScript function for doctor button
 function showDoctors(specialty) {
   // Hide all doctor lists
