@@ -853,6 +853,9 @@ nav ul li a:hover {
 
 .login-box input[type="email"]:focus,
 .login-box input[type="password"]:focus {
+  outline: none;
+  border-color: #e3aadd;
+  box-shadow: 0 0 5px #c8a8e9;
 }
 
 .login-box input[type="submit"] {
