@@ -786,7 +786,8 @@ nav ul li a:hover {
 
 .signup-box input[type="text"]:focus,
 .signup-box input[type="email"]:focus,
-.signup-box input[type="password"]:focus {
+.signup-box input[type="password"]:focus,
+.signup-box select:focus {
   width: 100%;
   padding: 0.8rem;
   margin-bottom: 1rem;
