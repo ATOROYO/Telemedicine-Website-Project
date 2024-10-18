@@ -769,7 +769,14 @@ nav ul li a:hover {
   color: #c8a8e9;
 }
 
-.signup-box input {
+.consultation-form input[type="time"]:focus,
+.consultation-form select:focus {
+  outline: none;
+  border-color: #e3aadd;
+  box-shadow: 0 0 5px #c8a8e9;
+}
+
+.signup-box input[type="text"]:focus {
   width: 100%;
   padding: 0.8rem;
   margin-bottom: 1rem;
