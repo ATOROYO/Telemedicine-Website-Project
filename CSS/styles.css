@@ -121,7 +121,7 @@ nav ul li a:hover {
 /* Hero Section */
 /* Hero Section */
 #hero {
-  height: 100vh; /* Full screen height */
+  height: 100vh;
   background-image: url("/IMAGES/blog1.jpg");
   background-size: cover; /* Ensure the image covers the entire hero section */
   background-position: center; /* Center the image */
