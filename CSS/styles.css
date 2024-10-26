@@ -376,7 +376,7 @@ nav ul li a:hover {
 /* Additional styles specific to the About page */
 #about {
   padding: 2rem 0;
-  align-items: center;
+  text-align: center;
   background: #f9f9f9;
 }
 
