@@ -20,3 +20,52 @@ function showMessage(type, text) {
     divMessage.style.display = "none";
   }, 3000);
 }
+
+// Registration form
+document
+  .getElementById("registerForm")
+  .addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const firstName = document.getElementById("regFirstName").value;
+    const lastName = document.getElementById("regLastName").value;
+    const email = document.getElementById("regEmail").value;
+    const phone = document.getElementById("regPhone").value;
+    const password = document.getElementById("regPassword").value;
+
+    try {
+      const response = await fetch("/telemedicine/api/patient/register", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ firstName, lastName, email, phone, password }),
+      });
+
+      // Check response status
+      if (!response.ok) {
+        const errorMessage = `Error: ${response.status} ${response.statusText}`;
+        console.error(errorMessage);
+        showMessage("failed", errorMessage);
+        return;
+      }
+
+      // Parse JSON response
+      let result;
+      try {
+        result = await response.json();
+      } catch (err) {
+        console.error("Failed to parse JSON:", err);
+        showMessage("failed", "Invalid response from server.");
+        return;
+      }
+
+      // Handle result
+      if (result.status === 201) {
+        showMessage("success", result.message);
+      } else {
+        showMessage("failed", result.message || "Registration failed.");
+      }
+    } catch (err) {
+      console.error("Network or server error:", err);
+      showMessage("failed", "Unable to register. Please try again later.");
+    }
+  });
