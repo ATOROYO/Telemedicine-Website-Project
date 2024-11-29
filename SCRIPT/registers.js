@@ -69,3 +69,29 @@ document
       showMessage("failed", "Unable to register. Please try again later.");
     }
   });
+
+// Login form
+document.getElementById("loginForm").addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const firstName = document.getElementById("loginFirstName").value;
+  const lastName = document.getElementById("loginLastName").value;
+  const email = document.getElementById("loginEmail").value;
+  const phone = document.getElementById("loginPhone").value;
+  const password = document.getElementById("loginPassword").value;
+
+  //   Transit the data
+  const response = await fetch("/telemedicine/api/patients/register", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ firstName, lastName, email, phone, password }),
+  });
+
+  const result = await response.json();
+
+  if (result.status === 201) {
+    showMessage("success", result.message);
+  } else {
+    showMessage("failed", result.result);
+  }
+});
