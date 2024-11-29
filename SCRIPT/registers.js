@@ -52,24 +52,21 @@ document
 // Login form
 document.getElementById("loginForm").addEventListener("submit", async (e) => {
   e.preventDefault();
-
-  const firstName = document.getElementById("loginFirstName").value;
-  const lastName = document.getElementById("loginLastName").value;
   const email = document.getElementById("loginEmail").value;
-  const phone = document.getElementById("loginPhone").value;
-  const password = document.getElementById("loginPassword").value;
+  const password = document.getElementById("loginpassword").value;
 
   //   Transit the data
-  const response = await fetch("/telemedicine/api/patients/register", {
+  const response = await fetch("/telemedicine/api/patients/login", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ firstName, lastName, email, phone, password }),
+    body: JSON.stringify({ email, password }),
   });
 
   const result = await response.json();
 
-  if (result.status === 201) {
+  if (response.status === 201) {
     showMessage("success", result.message);
+    getPatient();
   } else {
     showMessage("failed", result.result);
   }
