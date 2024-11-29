@@ -154,3 +154,38 @@ logoutButton.addEventListener("click", async () => {
     showMessage("failed", result.message);
   }
 });
+
+// Code for contact form submission
+document
+  .getElementById("contactForm")
+  .addEventListener("submit", async function (event) {
+    event.preventDefault(); // Prevent traditional form submission
+
+    const formData = {
+      name: document.getElementById("name").value.trim(),
+      email: document.getElementById("email").value.trim(),
+      subject: document.getElementById("subject").value.trim(),
+      message: document.getElementById("message").value.trim(),
+    };
+
+    try {
+      const response = await fetch("/contact/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        alert("Your message has been submitted successfully.");
+      } else {
+        alert(`Error: ${result.message}`);
+      }
+    } catch (error) {
+      console.error("An error occurred:", error);
+      alert("An unexpected error occurred. Please try again later.");
+    }
+  });
