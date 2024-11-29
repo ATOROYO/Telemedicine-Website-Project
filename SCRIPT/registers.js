@@ -112,3 +112,30 @@ async function getPatient() {
     showMessage("failed", result.message);
   }
 }
+
+// Update patient
+document.getElementById("updateForm").addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const firstName = document.getElementById("updateFirstName").value;
+  const lastName = document.getElementById("updateLastName").value;
+  const email = document.getElementById("updateEmail").value;
+  const phone = document.getElementById("updatePhone").value;
+  const password = document.getElementById("updatePassword").value;
+
+  //   Transit the data
+  const response = await fetch("/telemedicine/api/patients/patient/update", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ firstName, lastName, email, phone, password }),
+  });
+
+  const result = await response.json();
+
+  if (result.status === 200) {
+    showMessage("success", result.message);
+    getPatient();
+  } else {
+    showMessage("failed", result.result);
+  }
+});
