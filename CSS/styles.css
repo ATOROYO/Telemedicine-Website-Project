@@ -33,8 +33,8 @@ header {
   justify-content: space-between;
   align-items: center;
   animation: slideInFromTop 1s ease-out;
-  position: fixed;
-  z-index: 999;
+  /* position: fixed; */
+  /* z-index: 999; */
   width: 100%;
 }
 
@@ -122,7 +122,7 @@ nav ul li a:hover {
 /* Hero Section */
 #hero {
   height: 100vh;
-  background-image: url("/IMAGES/blog1.jpg");
+  background-image: url('/IMAGES/blog1.jpg');
   background-size: cover; /* Ensure the image covers the entire hero section */
   background-position: center; /* Center the image */
   background-repeat: no-repeat;
@@ -138,7 +138,7 @@ nav ul li a:hover {
 
 /* Dark overlay for better readability of text */
 #hero::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -195,7 +195,7 @@ nav ul li a:hover {
 }
 
 #services h2::after {
-  content: "";
+  content: '';
   width: 130px;
   height: 5px;
   background-color: #c8a8e9;
@@ -279,7 +279,7 @@ nav ul li a:hover {
 }
 
 .testimonials-section h2::after {
-  content: "";
+  content: '';
   width: 130px;
   height: 5px;
   background-color: #c8a8e9;
@@ -390,7 +390,7 @@ nav ul li a:hover {
 }
 
 #about h2::after {
-  content: "";
+  content: '';
   width: 130px;
   height: 5px;
   background-color: #c8a8e9;
@@ -423,7 +423,7 @@ nav ul li a:hover {
 }
 
 #team h2::after {
-  content: "";
+  content: '';
   width: 130px;
   height: 5px;
   background-color: #c8a8e9;
@@ -472,7 +472,7 @@ nav ul li a:hover {
 }
 
 .about-contact-info h2::after {
-  content: "";
+  content: '';
   width: 130px;
   height: 5px;
   background-color: #c8a8e9;
@@ -628,7 +628,7 @@ nav ul li a:hover {
 }
 
 #login-signup h2::after {
-  content: "";
+  content: '';
   width: 130px;
   height: 5px;
   background-color: #c8a8e9;
@@ -721,8 +721,8 @@ nav ul li a:hover {
   color: #7a3f74;
 }
 
-.login-box input[type="email"],
-.login-box input[type="password"] {
+.login-box input[type='email'],
+.login-box input[type='password'] {
   width: 100%;
   padding: 0.75rem;
   margin-bottom: 1rem;
@@ -730,7 +730,7 @@ nav ul li a:hover {
   border: 1px solid #ddd;
 }
 
-.login-box input[type="submit"] {
+.login-box input[type='submit'] {
   width: 100%;
   padding: 0.75rem;
   background-color: #e3aadd;
@@ -741,7 +741,7 @@ nav ul li a:hover {
   transition: background-color 0.3s;
 }
 
-.login-box input[type="submit"]:hover {
+.login-box input[type='submit']:hover {
   background-color: #c8a8e9;
 }
 
@@ -777,9 +777,9 @@ nav ul li a:hover {
   border: 1px solid #ccc;
 }
 
-.signup-box input[type="text"]:focus,
-.signup-box input[type="email"]:focus,
-.signup-box input[type="password"]:focus,
+.signup-box input[type='text']:focus,
+.signup-box input[type='email']:focus,
+.signup-box input[type='password']:focus,
 .signup-box select:focus {
   outline: none;
   border-color: #e3aadd;
@@ -844,8 +844,8 @@ nav ul li a:hover {
   color: #7a3f74;
 }
 
-.login-box input[type="email"],
-.login-box input[type="password"] {
+.login-box input[type='email'],
+.login-box input[type='password'] {
   width: 100%;
   padding: 0.75rem;
   margin-bottom: 1rem;
@@ -853,14 +853,14 @@ nav ul li a:hover {
   border: 1px solid #ddd;
 }
 
-.login-box input[type="email"]:focus,
-.login-box input[type="password"]:focus {
+.login-box input[type='email']:focus,
+.login-box input[type='password']:focus {
   outline: none;
   border-color: #e3aadd;
   box-shadow: 0 0 5px #c8a8e9;
 }
 
-.login-box input[type="submit"] {
+.login-box input[type='submit'] {
   width: 100%;
   padding: 0.75rem;
   background-color: #c8a8e9;
@@ -871,7 +871,7 @@ nav ul li a:hover {
   transition: background-color 0.3s;
 }
 
-.login-box input[type="submit"]:hover {
+.login-box input[type='submit']:hover {
   background-color: #e3aadd;
 }
 
@@ -893,7 +893,7 @@ nav ul li a:hover {
 }
 
 .consultation h2::after {
-  content: "";
+  content: '';
   width: 130px;
   height: 5px;
   background-color: #c8a8e9;
@@ -1069,11 +1069,11 @@ nav ul li a:hover {
   color: #333;
 }
 
-.consultation-form input[type="text"],
-.consultation-form input[type="email"],
-.consultation-form input[type="tel"],
-.consultation-form input[type="date"],
-.consultation-form input[type="time"],
+.consultation-form input[type='text'],
+.consultation-form input[type='email'],
+.consultation-form input[type='tel'],
+.consultation-form input[type='date'],
+.consultation-form input[type='time'],
 .consultation-form select {
   padding: 0.5rem;
   border: 1px solid #ccc;
@@ -1082,18 +1082,18 @@ nav ul li a:hover {
   transition: border-color 0.3s, box-shadow 0.3s;
 }
 
-.consultation-form input[type="text"]:focus,
-.consultation-form input[type="email"]:focus,
-.consultation-form input[type="tel"]:focus,
-.consultation-form input[type="date"]:focus,
-.consultation-form input[type="time"]:focus,
+.consultation-form input[type='text']:focus,
+.consultation-form input[type='email']:focus,
+.consultation-form input[type='tel']:focus,
+.consultation-form input[type='date']:focus,
+.consultation-form input[type='time']:focus,
 .consultation-form select:focus {
   outline: none;
   border-color: #e3aadd;
   box-shadow: 0 0 5px #c8a8e9;
 }
 
-.consultation-form button[type="submit"] {
+.consultation-form button[type='submit'] {
   background-color: #e3aadd;
   color: white;
   padding: 0.75rem;
@@ -1104,7 +1104,7 @@ nav ul li a:hover {
   transition: background-color 0.3s ease;
 }
 
-.consultation-form button[type="submit"]:hover {
+.consultation-form button[type='submit']:hover {
   background-color: #f3dcdc;
   font-weight: 600;
   color: #7a3f74;
@@ -1191,7 +1191,7 @@ nav ul li a:hover {
 }
 
 .blog-section h2::after {
-  content: "";
+  content: '';
   width: 130px;
   height: 5px;
   background-color: #c8a8e9;
@@ -1264,7 +1264,7 @@ nav ul li a:hover {
 }
 
 .contact-section h2::after {
-  content: "";
+  content: '';
   width: 130px;
   height: 5px;
   background-color: #c8a8e9;
@@ -1648,7 +1648,7 @@ footer {
   }
 
   .menu-btn i.active:before {
-    content: "\f00d";
+    content: '\f00d';
   }
 
   .nav-bar .menu {
@@ -1717,7 +1717,7 @@ footer {
     gap: 0.75rem;
   }
 
-  .consultation-form button[type="submit"] {
+  .consultation-form button[type='submit'] {
     font-size: 1rem;
     padding: 0.5rem;
   }
