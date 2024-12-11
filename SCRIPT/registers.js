@@ -1,10 +1,19 @@
-'use strict';
+// Declaring variables
+const divMessage = document.getElementById('message');
+const patientSection = document.getElementById('patientSection');
+const pFirstNameSpan = document.getElementById('pFirstName');
+const pLastNameSpan = document.getElementById('pLastName');
+const patientEmail = document.getElementById('pEmail');
+const logoutButton = document.getElementById('logoutButton');
 
-// Utility function to show messages
 function showMessage(type, text) {
-  const divMessage = document.getElementById('message');
   divMessage.style.display = 'block';
-  divMessage.style.color = type === 'success' ? 'green' : 'red';
+
+  if (type === 'success') {
+    divMessage.style.color = 'green';
+  } else {
+    divMessage.style.color = 'red';
+  }
   divMessage.textContent = text;
 
   setTimeout(() => {
@@ -12,125 +21,256 @@ function showMessage(type, text) {
   }, 3000);
 }
 
-// Utility function for form validation
-function validateFields(fields) {
-  return fields.every(field => field.trim() !== '');
-}
-
-// Handle form submissions
-async function handleSubmit(url, data, successCallback) {
-  try {
-    const response = await fetch(url, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(data),
-    });
-
-    const result = await response.json();
-    if (response.ok) {
-      showMessage('success', result.message);
-      if (successCallback) successCallback(result);
-    } else {
-      showMessage('failed', result.message || 'An error occurred.');
-    }
-  } catch (err) {
-    console.error('An unexpected error occurred:', err);
-    showMessage('failed', 'An unexpected error occurred. Please try again.');
-  }
-}
-
 // Registration form
-document.getElementById('registerForm').addEventListener('submit', e => {
+document.getElementById('registerForm').addEventListener('submit', async e => {
   e.preventDefault();
-  const data = {
-    firstName: document.getElementById('regFirstName').value,
-    lastName: document.getElementById('regLastName').value,
-    email: document.getElementById('regEmail').value,
-    phone: document.getElementById('regPhone').value,
-    password: document.getElementById('regPassword').value,
-  };
 
-  if (!validateFields(Object.values(data))) {
-    return showMessage('failed', 'Please fill in all required fields.');
+  const first_name = document.getElementById('regFirstName').value;
+  const last_name = document.getElementById('regLastName').value;
+  const email = document.getElementById('regEmail').value;
+  const phone = document.getElementById('regPhone').value;
+  const password = document.getElementById('regPassword').value;
+
+  // Transit the data
+  const response = await fetch('/register', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ first_name, last_name, email, phone, password }),
+  });
+
+  const result = await response.json();
+
+  if (response.status === 201) {
+    showMessage('success', result.message);
+  } else {
+    showMessage('failed', result.message);
   }
-
-  handleSubmit('/register', data);
 });
 
 // Login form
-document.getElementById('loginForm').addEventListener('submit', e => {
+document.getElementById('loginForm').addEventListener('submit', async e => {
   e.preventDefault();
-  const data = {
-    email: document.getElementById('loginEmail').value,
-    password: document.getElementById('loginpassword').value,
-  };
+  const email = document.getElementById('loginEmail').value;
+  const password = document.getElementById('loginPassword').value;
 
-  if (!validateFields(Object.values(data))) {
-    return showMessage('failed', 'Please fill in all required fields.');
+  // Transit the data
+  const response = await fetch('/telemedicine/api/patients/login', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ email, password }),
+  });
+
+  const result = await response.json();
+
+  if (response.status === 200) {
+    // Changed from 201 to 200 for success
+    showMessage('success', result.message);
+    getPatient();
+  } else {
+    showMessage('failed', result.result);
   }
-
-  handleSubmit('/telemedicine/api/patients/login', data, getPatient);
 });
 
-// Fetch patient details
+// Function for fetching user details
 async function getPatient() {
-  try {
-    const response = await fetch('/telemedicine/api/patients/patient/update', {
+  const response = await fetch(
+    '/telemedicine/api/patients/patient/patient/update',
+    {
       method: 'GET',
-    });
-
-    if (response.ok) {
-      const { patient } = await response.json();
-      document.getElementById('pFirstName').textContent = patient.firstName;
-      document.getElementById('pLastName').textContent = patient.lastName;
-      document.getElementById('pEmail').textContent = patient.email;
-      document.getElementById('patientSection').style.display = 'block';
-    } else {
-      showMessage('failed', 'Failed to fetch patient details.');
     }
-  } catch (err) {
-    console.error('Error fetching patient details:', err);
-    showMessage('failed', 'An error occurred while fetching details.');
+  );
+
+  const result = await response.json();
+
+  if (response.status === 200) {
+    pFirstNameSpan.textContent = result.patient.firstName;
+    pLastNameSpan.textContent = result.patient.lastName;
+    patientEmail.textContent = result.patient.email;
+    patientSection.style.display = 'block';
+  } else {
+    showMessage('failed', result.message);
   }
 }
+
+// Update patient
+document.getElementById('updateForm').addEventListener('submit', async e => {
+  e.preventDefault();
+
+  const firstName = document.getElementById('updateFirstName').value;
+  const lastName = document.getElementById('updateLastName').value;
+  const email = document.getElementById('updateEmail').value;
+  const phone = document.getElementById('updatePhone').value;
+  const password = document.getElementById('updatePassword').value;
+
+  // Transit the data
+  const response = await fetch('/telemedicine/api/patients/patient/update', {
+    method: 'PUT',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ firstName, lastName, email, phone, password }),
+  });
+
+  const result = await response.json();
+
+  if (response.status === 200) {
+    // Check for status 200 for success
+    showMessage('success', result.message);
+    getPatient();
+  } else {
+    showMessage('failed', result.result);
+  }
+});
 
 // Logout
-document.getElementById('logoutButton').addEventListener('click', async () => {
-  try {
-    const response = await fetch('/telemedicine/api/patients/logout', {
-      method: 'GET',
-    });
+logoutButton.addEventListener('click', async () => {
+  const response = await fetch('/telemedicine/api/patients', {
+    method: 'GET',
+  });
 
-    const result = await response.json();
-    if (response.ok) {
-      showMessage('success', result.message);
-      document.getElementById('patientSection').style.display = 'none';
-    } else {
-      showMessage('failed', result.message || 'Logout failed.');
+  const result = await response.json(); // Added this line to ensure the response is handled correctly
+
+  if (response.status === 200) {
+    showMessage('success', result.message);
+    patientSection.style.display = 'none';
+  } else {
+    showMessage('failed', result.message);
+  }
+});
+
+// Code for contact form submission
+document
+  .getElementById('contactForm')
+  .addEventListener('submit', async function (event) {
+    event.preventDefault(); // Prevent traditional form submission
+
+    const formData = {
+      name: document.getElementById('name').value.trim(),
+      email: document.getElementById('email').value.trim(),
+      subject: document.getElementById('subject').value.trim(),
+      message: document.getElementById('message').value.trim(),
+    };
+
+    try {
+      const response = await fetch('/telemedicine/api/patient/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        alert('Your message has been submitted successfully.');
+      } else {
+        alert(`Error: ${result.message}`);
+      }
+    } catch (error) {
+      console.error('An error occurred:', error);
+      alert('An unexpected error occurred. Please try again later.');
     }
-  } catch (err) {
-    console.error('Logout error:', err);
-    showMessage('failed', 'An unexpected error occurred.');
-  }
-});
+  });
 
-// Newsletter subscription
-document.getElementById('newsletterForm').addEventListener('submit', e => {
-  e.preventDefault();
-  const email = document.getElementById('newsletterEmail').value.trim();
+// JavaScript for Frontend Handling News letter
+document
+  .getElementById('newsletterForm')
+  .addEventListener('submit', async function (event) {
+    event.preventDefault(); // Prevent the default form submission behavior
 
-  if (!email) {
-    return showMessage('failed', 'Please enter a valid email address.');
-  }
+    // Get the email value
+    const email = document.getElementById('newsletterEmail').value.trim();
 
-  handleSubmit('/newsletter/subscribe', { email });
-});
+    // Validate the email
+    if (!email) {
+      document.getElementById('newsletterMessage').textContent =
+        'Please enter a valid email address.';
+      return;
+    }
 
-// General validation for consultations and contact forms
-function handleFormSubmission(event, url, data) {
-  event.preventDefault();
-  if (!validateFields(Object.values(data))) {
-    return showMessage('failed', 'Please fill in all required fields.');
-  }
-  handleSubmit(url, data);
-}
+    try {
+      // Send the data to the backend
+      const response = await fetch('/newsletter/subscribe', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      if (response.ok) {
+        document.getElementById('newsletterMessage').textContent =
+          'Thank you for subscribing!';
+      } else {
+        const error = await response.json();
+        document.getElementById('newsletterMessage').textContent = `Error: ${
+          error.message || 'Failed to subscribe. Please try again.'
+        }`;
+      }
+    } catch (err) {
+      console.error('Error occurred:', err);
+      document.getElementById('newsletterMessage').textContent =
+        'An unexpected error occurred. Please try again.';
+    }
+  });
+
+// Front handling of Consultation
+document
+  .querySelector('.consultation-form form')
+  .addEventListener('submit', async function (event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    // Collect form data
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const specialty = document.getElementById('specialty').value;
+    const doctor = document.getElementById('doctor').value;
+    const appointmentDate = document.getElementById('appointment-date').value;
+    const appointmentTime = document.getElementById('appointment-time').value;
+
+    // Validate input data
+    if (
+      !name ||
+      !email ||
+      !phone ||
+      !specialty ||
+      !doctor ||
+      !appointmentDate ||
+      !appointmentTime
+    ) {
+      alert('Please fill in all required fields.');
+      return;
+    }
+
+    try {
+      // Send data to the backend
+      const response = await fetch('/consultations/book', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          phone,
+          specialty,
+          doctor,
+          appointment_date: appointmentDate,
+          appointment_time: appointmentTime,
+        }),
+      });
+
+      if (response.ok) {
+        const result = await response.json();
+        alert('Consultation booked successfully!');
+        console.log('Booking Details:', result);
+        this.reset(); // Reset the form fields
+      } else {
+        const error = await response.json();
+        alert(`Failed to book consultation: ${error.message}`);
+      }
+    } catch (err) {
+      console.error('An unexpected error occurred:', err);
+      alert('An unexpected error occurred. Please try again.');
+    }
+  });
