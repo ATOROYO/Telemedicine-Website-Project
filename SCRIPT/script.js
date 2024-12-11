@@ -1,8 +1,12 @@
 // togle menu/nav-bar Script
-$(document).ready(function () {
-  $('.menu-btn').click(function () {
-    $('.nav-bar .menu').toggleClass('active');
-    $('.nav-bar i').toggleClass('active');
+document.addEventListener('DOMContentLoaded', function () {
+  const menuBtn = document.querySelector('.menu-btn');
+  const menu = document.querySelector('.nav-bar .menu');
+  const icon = document.querySelector('.nav-bar i');
+
+  menuBtn.addEventListener('click', function () {
+    menu.classList.toggle('active');
+    icon.classList.toggle('active');
   });
 });
 
