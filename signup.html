@@ -14,17 +14,17 @@
     <section id="signup">
       <div class="signup-box">
         <h2>Create Your Account</h2>
-        <form action="account-created.html" method="post" id="registerForm">
+        <form method="post" id="registerForm">
           <input
             type="text"
-            name="firstName"
+            name="first_name"
             id="regFirstName"
             placeholder="First Name"
             required
           />
           <input
             type="text"
-            name="lastName"
+            name="last_name"
             id="regLastName"
             placeholder="Last Name"
             required
@@ -50,15 +50,10 @@
             placeholder="Password"
             required
           />
-          <input
-            type="password"
-            name="confirmPassword"
-            id="regPassword"
-            placeholder="Confirm Password"
-            required
-          />
+
           <button type="submit">Sign Up</button>
         </form>
+        <div id="message" style="display: none"></div>
         <p>
           Already have an account? <a href="patient-login.html">Login Here</a>
         </p>
@@ -66,5 +61,6 @@
     </section>
   </body>
   <script src="SCRIPT/script.js"></script>
+  <script src="SCRIPT/registers.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </html>
