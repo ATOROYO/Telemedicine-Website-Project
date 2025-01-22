@@ -119,6 +119,45 @@ nav ul li a:hover {
   display: none;
 }
 
+/* Responsive Search Bar */
+.search-bar {
+  position: relative;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar input {
+  width: 300px;
+  padding: 10px 15px;
+  border: 2px solid var(--primary-color);
+  border-radius: 20px;
+  outline: none;
+  transition: width 0.4s ease;
+}
+
+.search-bar input:focus {
+  width: 500px;
+}
+
+.search-bar button {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.search-bar button i {
+  font-size: 1rem;
+}
+
 /* Hero Section */
 #hero {
   height: 100vh;
