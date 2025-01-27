@@ -368,6 +368,151 @@ h2 {
   }
 }
 
+/* About Section */
+#about {
+  padding: 60px 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+#about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+#about p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  line-height: 1.8;
+  color: #555;
+  animation: slideIn 1.5s ease-in-out;
+}
+
+/* Team Section */
+#team {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+#team h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.team-member {
+  display: inline-block;
+  margin: 20px;
+  width: 250px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover img {
+  transform: scale(1.1);
+}
+
+.team-member h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.team-member p {
+  font-size: 1rem;
+  color: #777;
+}
+
+/* Contact Information Section */
+.about-contact-info {
+  padding: 60px 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+.about-contact-info h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.contact-info-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contact-info-item {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-info-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info-item i {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.contact-info-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contact-info-item p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 /* Footer General Styling */
 footer {
   background-color: #20232a;
@@ -692,6 +837,15 @@ footer {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: flex;
+  }
+
+  .team-member {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .contact-info-item {
+    width: 100%;
   }
 
   .footer-container {
