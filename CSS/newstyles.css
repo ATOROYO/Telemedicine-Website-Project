@@ -35,6 +35,12 @@ h2 {
   z-index: 1000;
 }
 
+.nav-bar.sticky {
+  background: #007bff;
+  padding: 15px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
