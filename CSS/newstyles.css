@@ -55,6 +55,13 @@ h2 {
   transition: color 0.3s ease;
 }
 
+.nav-bar.sticky .menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
