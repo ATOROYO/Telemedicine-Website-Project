@@ -48,6 +48,13 @@ h2 {
   font-weight: 600;
 }
 
+.nav-bar.sticky .top-right-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
