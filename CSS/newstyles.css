@@ -912,6 +912,10 @@ footer {
     align-items: flex;
   }
 
+  .testimonial-card {
+    width: 300px;
+  }
+
   .team-member {
     width: 100%;
     margin: 10px 0;
