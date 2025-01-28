@@ -459,6 +459,13 @@ h2 {
   animation: fadeIn 1s ease-in-out;
 }
 
+.team-content {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .team-member {
   display: inline-block;
   margin: 20px;
@@ -468,6 +475,8 @@ h2 {
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 1s forwards;
+  transform: translateY(20px);
 }
 
 .team-member:hover {
@@ -480,6 +489,7 @@ h2 {
   height: 150px;
   border-radius: 50%;
   margin-bottom: 15px;
+  object-fit: cover;
   transition: transform 0.3s ease;
 }
 
