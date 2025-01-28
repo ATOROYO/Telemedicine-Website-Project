@@ -38,7 +38,7 @@ h2 {
 }
 
 .nav-bar.sticky {
-  background: #c8a8e9;
+  background: #1eadff;
   padding: 15px 0;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -79,7 +79,7 @@ h2 {
 .nav-bar.sticky .search-bar button {
   padding: 8px 12px;
   border: none;
-  background-color: #8f4788;
+  background-color: #007bff;
   color: #fff;
   border-radius: 0 5px 5px 0;
   border: 1px solid #fff;
@@ -114,7 +114,7 @@ h2 {
 
 .logo-container h1 {
   font-size: 1.5rem;
-  color: #333;
+  color: #007bff;
   margin: 0;
   font-weight: 600;
 }
@@ -140,7 +140,7 @@ h2 {
 }
 
 .top-right-links a:hover {
-  color: #8f4788;
+  color: #007bff;
 }
 
 .search-bar {
@@ -161,13 +161,13 @@ h2 {
 }
 
 .search-bar input:focus {
-  border-color: #8f4788;
+  border-color: #007bff;
 }
 
 .search-bar button {
   padding: 8px 12px;
   border: none;
-  background-color: #c8a8e9;
+  background-color: #1eadff;
   color: #fff;
   border-radius: 0 5px 5px 0;
   cursor: pointer;
@@ -175,7 +175,7 @@ h2 {
 }
 
 .search-bar button:hover {
-  background-color: #8f4788;
+  background-color: #007bff;
 }
 
 .menu {
@@ -194,7 +194,7 @@ h2 {
 }
 
 .menu li a:hover {
-  color: #8f4788;
+  color: #007bff;
 }
 
 .menu-btn {
