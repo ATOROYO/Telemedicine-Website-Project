@@ -220,7 +220,8 @@ h2 {
 /* Hero Section */
 #hero {
   height: 100vh;
-  background-image: url("/IMAGES/blog1.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/IMAGES/blog1.jpg");
   background-size: cover; /* Ensure the image covers the entire hero section */
   background-position: center; /* Center the image */
   background-repeat: no-repeat;
