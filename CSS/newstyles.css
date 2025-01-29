@@ -684,6 +684,243 @@ h2 {
   }
 }
 
+/* Consultation Section */
+.consultation {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+}
+
+.consultation h2 {
+  text-align: center;
+  font-size: 2.8rem;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  animation: fadeInUp 1s ease;
+}
+
+.consultation p {
+  text-align: center;
+  color: #666;
+  margin-bottom: 50px;
+}
+
+/* Specialties Styling */
+.specialties {
+  text-align: center;
+  margin-bottom: 40px;
+  /* display: flex; */
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.specialties h3 {
+  /* margin: 0 auto; */
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.specialties ul {
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.specialties li {
+  background: white;
+  padding: 15px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  justify-content: space-around;
+  gap: 5px;
+}
+
+.specialties li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  background: #007bff;
+  color: white;
+}
+
+.specialties li i {
+  font-size: 1.2rem;
+}
+
+/* Doctors Section */
+.doctors {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.doctors.active {
+  display: block;
+  animation: fadeInUp 1s forwards;
+}
+
+.doctor-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  gap: 25px;
+  animation: fadeIn 0.5s ease;
+}
+
+.doctor-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+}
+
+.doctor-card:hover {
+  transform: translateY(-5px);
+}
+
+.doctor-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid #007bff;
+}
+
+.doctor-card h4 {
+  padding-left: 15px;
+  margin: 0;
+  color: #333;
+}
+
+.doctor-card p {
+  padding-left: 20px;
+  margin: 0;
+  color: #777;
+}
+
+/* Video Call Button */
+.video-call-button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 auto;
+}
+
+.video-call-button:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+.video-call-button i {
+  font-size: 1.2rem;
+}
+
+/* Consultation Form */
+.consultation-form {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+.consultation-form h3 {
+  color: #2c3e50;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #444;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.consultation-form button[type="submit"] {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.consultation-form button[type="submit"]:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 0.9rem;
+  margin-top: 5px;
+  display: none;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /* Footer General Styling */
 footer {
   background-color: #20232a;
@@ -1015,5 +1252,22 @@ footer {
 
   #services h2 {
     font-size: 2.2rem;
+  }
+
+  .consultation {
+    padding: 40px 0;
+  }
+
+  .specialties ul {
+    flex-direction: column;
+  }
+
+  .doctor-list {
+    grid-template-columns: 1fr;
+  }
+
+  .consultation-form {
+    margin: 20px;
+    padding: 20px;
   }
 }
