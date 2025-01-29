@@ -56,3 +56,29 @@ $(document).ready(function () {
     }
   });
 });
+
+// JavaScript to handle the FAQ toggling (in your new.js file):
+document.addEventListener("DOMContentLoaded", function () {
+  const faqQuestions = document.querySelectorAll(".faq-question");
+
+  faqQuestions.forEach((question) => {
+    question.addEventListener("click", () => {
+      const answer = question.nextElementSibling;
+      const isActive = question.classList.contains("active");
+
+      // Close all answers
+      document.querySelectorAll(".faq-answer").forEach((ans) => {
+        ans.style.maxHeight = null;
+      });
+      document.querySelectorAll(".faq-question").forEach((q) => {
+        q.classList.remove("active");
+      });
+
+      // Toggle current answer
+      if (!isActive) {
+        question.classList.add("active");
+        answer.style.maxHeight = answer.scrollHeight + "px";
+      }
+    });
+  });
+});
