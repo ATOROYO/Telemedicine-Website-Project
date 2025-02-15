@@ -199,7 +199,7 @@
         <div class="consultation-form">
           <h3>Book a Consultation</h3>
           <form
-            action="/consultations/book"
+            action="/telemedicine/api/consultations/book"
             method="post"
             onsubmit="return validateForm()"
           >
@@ -335,25 +335,25 @@
       function showDoctors(specialty) {
         // Hide all doctor lists
         document
-          .querySelectorAll(".doctor-list")
-          .forEach((list) => (list.style.display = "none"));
+          .querySelectorAll('.doctor-list')
+          .forEach(list => (list.style.display = 'none'));
 
         // Show the selected specialty's doctor list
-        document.getElementById(specialty).style.display = "block";
+        document.getElementById(specialty).style.display = 'block';
       }
 
       // JavaScript for Dynamic Doctor Selection in Form
-      const specialtyDropdown = document.getElementById("specialty");
-      const doctorDropdown = document.getElementById("doctor");
+      const specialtyDropdown = document.getElementById('specialty');
+      const doctorDropdown = document.getElementById('doctor');
 
       // Example doctors list
       const doctors = {
-        cardiology: ["Dr. John Doe", "Dr. Jane Smith"],
-        dermatology: ["Dr. Sarah Johnson", "Dr. Mark Lee"],
-        pediatrics: ["Dr. Emily Brown", "Dr. Alex White"],
+        cardiology: ['Dr. John Doe', 'Dr. Jane Smith'],
+        dermatology: ['Dr. Sarah Johnson', 'Dr. Mark Lee'],
+        pediatrics: ['Dr. Emily Brown', 'Dr. Alex White'],
       };
 
-      specialtyDropdown.addEventListener("change", () => {
+      specialtyDropdown.addEventListener('change', () => {
         // Clear current doctor options
         doctorDropdown.innerHTML = '<option value="">Select Doctor</option>';
 
@@ -362,8 +362,8 @@
 
         // Populate doctor options based on selected specialty
         if (doctors[selectedSpecialty]) {
-          doctors[selectedSpecialty].forEach((doctor) => {
-            const option = document.createElement("option");
+          doctors[selectedSpecialty].forEach(doctor => {
+            const option = document.createElement('option');
             option.value = doctor;
             option.textContent = doctor;
             doctorDropdown.appendChild(option);
