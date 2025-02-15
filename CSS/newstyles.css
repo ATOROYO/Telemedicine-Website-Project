@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&family=Ubuntu:wght@400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&family=Ubuntu:wght@400;500;700&display=swap');
 
 /* General Styles */
 * {
@@ -213,7 +213,7 @@ h2 {
 }
 
 .menu-btn.active i::before {
-  content: "\00d7"; /* Unicode for 'X' */
+  content: '\00d7'; /* Unicode for 'X' */
   font-size: 2rem; /* Adjust size if needed */
 }
 
@@ -221,7 +221,7 @@ h2 {
 #hero {
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/IMAGES/blog1.jpg");
+    url('/IMAGES/blog1.jpg');
   background-size: cover; /* Ensure the image covers the entire hero section */
   background-position: center; /* Center the image */
   background-repeat: no-repeat;
@@ -617,7 +617,7 @@ h2 {
 }
 
 .service-card::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -656,7 +656,7 @@ h2 {
 }
 
 .service-card a::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   left: 0;
@@ -877,7 +877,7 @@ h2 {
   outline: none;
 }
 
-.consultation-form button[type="submit"] {
+.consultation-form button[type='submit'] {
   background: #007bff;
   color: white;
   border: none;
@@ -889,7 +889,7 @@ h2 {
   transition: all 0.3s ease;
 }
 
-.consultation-form button[type="submit"]:hover {
+.consultation-form button[type='submit']:hover {
   background: #0056b3;
   transform: translateY(-2px);
 }
@@ -1120,12 +1120,6 @@ h2 {
   background-color: #f8f9fa;
 }
 
-.contact-section .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
 .contact-section h2 {
   text-align: center;
   font-size: 2.8rem;
@@ -1136,16 +1130,15 @@ h2 {
 
 .contact-section p {
   text-align: center;
-  font-size: 1.1rem;
   color: #666;
   margin-bottom: 50px;
 }
 
 .contact-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: 1fr 1fr;
   gap: 40px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 /* Contact Form */
@@ -1158,9 +1151,9 @@ h2 {
 
 .contact-form label {
   display: block;
-  font-size: 1rem;
-  color: #2c3e50;
   margin-bottom: 8px;
+  color: #444;
+  font-weight: 500;
 }
 
 .contact-form input,
@@ -1170,7 +1163,6 @@ h2 {
   margin-bottom: 20px;
   border: 1px solid #ddd;
   border-radius: 6px;
-  font-size: 1rem;
   transition: border-color 0.3s ease;
 }
 
@@ -1184,26 +1176,26 @@ h2 {
   resize: vertical;
 }
 
-.contact-form button {
-  display: inline-block;
-  padding: 12px 30px;
-  background-color: #007bff;
+.btn {
+  background: #007bff;
   color: white;
   border: none;
-  border-radius: 6px;
-  font-size: 1rem;
+  padding: 12px 25px;
+  border-radius: 25px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  width: 100%;
 }
 
-.contact-form button:hover {
-  background-color: #0056b3;
+.btn:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
 }
 
 .success-message {
-  margin-top: 20px;
   color: #28a745;
-  font-size: 1rem;
+  margin-top: 15px;
   display: none;
 }
 
@@ -1216,22 +1208,21 @@ h2 {
 }
 
 .contact-info h3 {
-  font-size: 1.5rem;
   color: #2c3e50;
   margin-bottom: 20px;
 }
 
 .contact-info p {
-  font-size: 1rem;
+  margin: 15px 0;
   color: #666;
-  margin-bottom: 15px;
   display: flex;
   align-items: center;
+  gap: 10px;
 }
 
 .contact-info i {
-  margin-right: 10px;
   color: #007bff;
+  width: 25px;
 }
 
 /* Map Container */
@@ -1240,12 +1231,6 @@ h2 {
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-.map-container iframe {
-  width: 100%;
-  height: 400px;
-  border: none;
 }
 
 /* Animations */
@@ -1257,6 +1242,26 @@ h2 {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-section {
+    padding: 40px 0;
+  }
+
+  .contact-section h2 {
+    font-size: 2.2rem;
+  }
+
+  .contact-form,
+  .contact-info {
+    padding: 20px;
   }
 }
 
