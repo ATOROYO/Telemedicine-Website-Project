@@ -150,7 +150,7 @@ document
     };
 
     try {
-      const response = await fetch('/telemedicine/api/patient/submit', {
+      const response = await fetch('/telemedicine/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
