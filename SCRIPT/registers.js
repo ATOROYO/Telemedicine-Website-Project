@@ -32,7 +32,7 @@ document.getElementById('registerForm').addEventListener('submit', async e => {
   const password = document.getElementById('regPassword').value;
 
   // Transit the data
-  const response = await fetch('/register', {
+  const response = await fetch('/telemedicine/api/patients/register', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ first_name, last_name, email, phone, password }),
