@@ -244,7 +244,7 @@ document
 
     try {
       // Send data to the backend
-      const response = await fetch('/consultations/book', {
+      const response = await fetch('/telemedicine/api/consultations/book', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
