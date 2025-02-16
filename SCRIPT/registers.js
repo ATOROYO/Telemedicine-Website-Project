@@ -189,7 +189,7 @@ document
 
     try {
       // Send the data to the backend
-      const response = await fetch('/newsletter/subscribe', {
+      const response = await fetch('/telemedicine/api/newsletter/subscribe', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
