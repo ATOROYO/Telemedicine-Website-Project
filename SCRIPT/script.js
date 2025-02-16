@@ -110,3 +110,41 @@
 //     testimonials[newIndex].classList.add('active');
 //   }
 // });
+
+// Add this at the bottom of your existing new.js file
+document.addEventListener('DOMContentLoaded', function () {
+  // Add entry animation to main content
+  const mainContent = document.querySelector('.container'); // Target your main content container
+  if (mainContent) {
+    mainContent.classList.add('page-transition');
+  }
+
+  // Add slide-out animation to navigation links
+  document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      const href = this.getAttribute('href');
+
+      // Add exit animation to current page
+      if (mainContent) {
+        mainContent.classList.add('page-exit');
+      }
+
+      // Wait for animation to complete before navigating
+      setTimeout(() => {
+        window.location.href = href;
+      }, 500); // Match animation duration (0.5s = 500ms)
+    });
+  });
+
+  // Handle menu button animation
+  const menuBtn = document.querySelector('.menu-btn');
+  const menu = document.querySelector('.menu');
+
+  if (menuBtn && menu) {
+    menuBtn.addEventListener('click', function () {
+      menu.classList.toggle('active');
+      menuBtn.classList.toggle('close');
+    });
+  }
+});
