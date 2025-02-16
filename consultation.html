@@ -310,6 +310,8 @@
         <div class="footer-newsletter">
           <h3>Stay Connected</h3>
           <form
+            id="consultationForm"
+            onsubmit="event.preventDefault(); handleConsultationSubmit();"
             action="/telemedicine/api/newsletter/subscribe"
             method="POST"
             class="newsletter-form"
